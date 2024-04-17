@@ -17,7 +17,7 @@ $sujet = "Nouveau message de votre portfolio";
 $headers = "De : $nom <$mail>";
 
 // Utilisez la fonction mail() pour envoyer l'e-mail
-/* mail($destinataire, $sujet, $contenu, $headers); */
+ mail($destinataire, $sujet, $contenu, $headers); 
 
 
 
@@ -33,18 +33,18 @@ $headers = "De : $nom <$mail>";
     <title>Envoie réussi</title>
 </head>
 <body >
-    <!-- <?php
+   <?php
         if(mail($destinataire, $sujet, $contenu, $headers)){
             ?>
             <h1>L'envoie de votre message a été réalisé avec succés !</h1>
             <h3>Vous serez redirigé dans quelques secondes sur mon portfollio, sinon cliqué <a href="../portfolio/index.html">ici</a></h3>
             <?php
         }
-    ?> -->
+   /*  ?> 
 
     <h1>Envoie seulement possible quand mon portfollio sera hebergé</h1>
     <h3>Vous serez redirigé dans quelques secondes sur mon portfollio, sinon cliquez <a href="../portfolio/index.html">ici</a></h3>
-    <?php
+    <?php */
     header("refresh:2;url=index.html");
     exit();
     ?>

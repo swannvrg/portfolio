@@ -1,0 +1,404 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(50deg, #a63eaf, #12408f, #1d1d1d);
+  color: white; 
+ 
+  background-size: 100% 100%; /* Ajustez la taille du fond pour couvrir toute la zone du body */
+  background-repeat: no-repeat;
+}
+
+main{
+  margin: 0 5%;
+  padding: 0; /* Ajoutez cette ligne pour supprimer tout espace supplémentaire */
+}
+
+html{margin: 0;padding: 0;}
+
+
+.full-height {
+  height: 100vh;
+} /* Pour que la première section fasse toute la page */
+
+/*/Pour le dégradé de mon name a la section acceuil/*/
+.gradient-text {
+  background-image: linear-gradient(to right, white, #2272FF); /* Dégradé de blanc à bleu de gauche à droite */
+  -webkit-background-clip: text; /* Permet de clipper le texte au dégradé */
+  background-clip: text; /* Permet de clipper le texte au dégradé */
+  color: transparent; /* Rend le texte transparent pour laisser apparaître le dégradé */
+  animation: animateGradient 5s linear infinite; /* Animation de 5 secondes, linéaire, en boucle infinie */
+}
+
+@keyframes animateGradient {
+  0% {
+      background-position: 0 0; /* Début de l'animation, position de départ */
+  }
+  100% {
+      background-position: 100% 0; /* Fin de l'animation, position de fin */
+  }
+}
+/* bouton qui va vers le haut */
+.bouton {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 9998; /* Assurez-vous que le bouton est au-dessus de tous les autres éléments */
+}
+
+/* Nav Bar */
+.modal-backdrop {/* pour pas que y'ai le flitre noir dessus */
+  display: none !important;
+}
+
+
+
+/*/pour annimation icon de scroll/*/
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+  clip: rect(0px, 40px, 70px, 0px); /* Définir la zone dans laquelle l'animation doit rester */
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(46px);
+  }
+}/* fin annimation scroll */
+
+/* reponsive des titres */
+/* titre je m'appelle swann */
+h1{
+  font-size: 100px;
+  font-weight: bold;
+
+  text-align: center;
+
+}
+@media screen and (max-width : 700px) {
+  h1{
+    font-size: 80px;
+    font-weight: bold;
+    
+    text-align: center;
+  
+  } 
+}
+@media screen and (max-width : 450px) {
+  h1{
+    font-size: 60px;
+    font-weight: bold;
+    
+    text-align: center;
+  
+  } 
+}
+
+/* Apprenti développeur */
+.dev{
+  font-size: 30px;
+  text-align: center;
+}
+@media screen and (max-width : 700px) {
+  .dev{
+    font-size: 20px;
+    text-align: center;
+  
+  } 
+}
+@media screen and (max-width : 450px) {
+  .dev{
+    font-size: 15px;
+    text-align: center;
+  
+  } 
+}
+
+/* titre de section */
+
+.titre{
+  font-size: 50px;
+}
+@media screen and (max-width : 700px) {
+  .titre{
+    font-size: 30px;
+    
+  
+  } 
+}
+
+
+
+
+/* time line parcours */
+
+.box-timeline {
+  width: 100%;
+  height: 1300px;
+ 
+  position: relative;
+  padding: 80px 0 0 0;
+  
+}
+
+.ligne {
+  height: 980px;
+  width: 8px;
+  margin: 0 auto;
+  background: #2272FF;
+}
+
+.rond {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2272FF;
+  position: absolute;
+  border: 1px solid #1d1d1d;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1{top: 80px;}
+.r2{top: 386px;}
+.r3{top: 692px;}
+.r4{top: 1000px;}
+
+.box {
+  color: #333;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 3px;
+  height: auto;
+  background: #f1f1f1;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.b1 {
+  top: 80px;
+  left: calc(50% - 270px);
+}
+.b2 {
+  top: 386px;
+  left: calc(50% + 270px);
+}
+.b3 {
+  top: 692px;
+  left: calc(50% - 270px);
+}
+.b4 {
+  top: 1000px;
+  left: calc(50% + 270px);
+}
+
+.box p {
+  line-height: 20px;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+.btnTime {
+  display: block;
+  background: midnightblue;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  color: #f1f1f1;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .ligne {
+      position: relative;
+      left: 200px;
+  }
+  .rond {
+      left: calc(50% + 200px);
+  }
+  .box {
+      left: calc(50% - 50px);
+      width: 400px;
+      margin-left: 10px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+
+  .ligne {
+      position: relative;
+      left: 150px;
+  }
+  .rond {
+      left: calc(50% + 150px);
+  }
+  .box {
+      left: calc(50% - 50px);
+      width: 260px;
+      margin-left: 10px;
+  }
+
+}
+
+/* Cards */
+/* annimation cards */
+.fade-in {
+  animation: fadeInFromBottom ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(50px); /* Déplace l'élément vers le bas */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Aucun déplacement, position normale */
+  }
+}
+
+
+
+.card{
+  height: 20rem;
+  width: 20rem;
+}
+/* responsive CARDS */
+@media screen and (max-width: 2300px) {
+
+  .card{
+    height: 20rem;
+    width: 17rem;
+  }
+
+
+}
+@media screen and (max-width: 2000px) {
+
+  .card{
+    height: 20rem;
+    width: 15rem;
+  }
+
+
+}
+@media screen and (max-width: 1730px) {
+
+  .card{
+    height: 23rem;
+    width: 12rem;
+  }
+  
+  
+
+}
+@media screen and (max-width: 1399px) {
+
+  .card{
+    height: 20rem;
+    width: 20rem;
+    
+  }
+  
+
+}
+@media screen and (max-width: 767px) {
+
+  .card{
+    height: 20rem;
+    width: 25rem;
+    
+  }
+  
+
+}
+@media screen and (max-width: 600px) {
+
+  .card{
+    height: 20rem;
+    width: 23rem;
+  }
+  
+
+}
+@media screen and (max-width: 450px) {
+
+  .card{
+    height: 20rem;
+    width: 18rem;
+  }
+  
+
+}
+
+
+/* Responsive map */
+@media screen and (max-width: 1600px) {
+  .map {
+    width: 500px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .map {
+    width: 400px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map {
+    width: 600px;
+    height: 450px;
+  }
+}
+

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Swann</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><!-- bootstrap -->
+    <link rel="stylesheet" href="../portfolio/design.css"><!-- page css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!-- bootstrap -->
+  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!-- AOS (annimation js) -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+ </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Remplacer la couleur primaire de Bootstrap
+      document.documentElement.style.setProperty('--primary', '#2272FF');
+    });
+  </script>
+<body data-spy="scroll" data-target="#navbar" data-offset="50"  >
+  <!-- bouton pour remonter -->
+  <div  class="btn btn-primary p-4 bouton" style="display: none;" >
+    <i class="fa-solid fa-arrow-up fa-2xl"></i>
+  </div >
+
+  <header >
+    <nav id="navbar" class="fixed-top navbar navbar-expand-lg row m-0 d-flex justify-content-center" >
+      <!-- navbar -->
+      
+      <!-- côté invisible pour le style de la navbar -->
+      <div class="bg-light mt-3 col-10 col-lg-8 col-xl-6  rounded-3 pt-2 pb-2 ">
+          <div class="d-flex justify-content-between ">
+              <a class="navbar-brand active-md d-md-none text-primary" href="#">Acceuil</a>
+              <span class="navbar-brand d-md-none text-primary">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </span>
+          </div>
+          <ul class="nav nav-pills color-dark row d-flex text-center text-dark d-none d-md-flex">
+              <!-- liste avec les différentes parties -->
+              <li class="col-2 nav-item"><a class="nav-link active" href="#Accueil">Accueil</a></li>
+              <li class="col-2 nav-item"><a class="nav-link" href="#Profil">Profil</a></li>
+              <li class="col-2 nav-item"><a class="nav-link" href="#Parcours">Parcours</a></li>
+              <li class="col-2 nav-item"><a class="nav-link" href="#Projets">Projets</a></li>
+              
+              <li class="col-2 nav-item"><a class="nav-link" href="#Veille">Veille</a></li>
+              <li class="col-2 nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+          </ul>
+      </div>
+      
+      <!-- côté invisible pour le style de la navbar -->
+  </nav>
+  
+  <div class="offcanvas offcanvas-end " tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="offcanvasNavbarLabel" style=".modal-backdrop.show{opacity: none;}">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="nav nav-pills flex-column">
+              <!-- liste avec les différentes parties -->
+              <li class="nav-item"><a class="nav-link text-dark border-top" href="#Accueil">Acceuil</a></li>
+              <li class="nav-item"><a class="nav-link text-dark border-top" href="#Profil">Profil</a></li>
+              <li class="nav-item"><a class="nav-link text-dark border-top" href="#Parcours">Parcours</a></li>
+              <li class="nav-item"><a class="nav-link text-dark border-top" href="#Projets">Projets</a></li>
+              <li class="nav-item"><a class="nav-link text-dark border-top" href="#Veille">Veille</a></li>
+              <li class="nav-item"><a class="nav-link text-dark border-top border-bottom" href="#Contact">Contact</a></li>
+          </ul>
+      </div>
+      
+      
+  </div>
+  </header>
+ 
+
+    <main>
+      <section id="Accueil" >
+        <!-- Accueil -->
+        <div class="full-height row ">
+          <div class="col-12"></div>
+          <div class="d-flex justify-content-center col-12">
+          <div class="text-center ">
+            <h5>Bonjour à tous et bienvenue,</h5><br>
+            <h1  style=' font-family: "Anton", sans-serif;' class="gradient-text fw-bold">Je m'appelle <span >Swann Basté Vergez</span></h1>
+            <h4 class="dev">| Apprenti développeur Full Stack |</h4>
+          </div>
+        </div>
+        <div class="col-12"></div>
+          <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5">
+            <a href="#Profil"><div class='icon-scroll'></div></a>
+          </div>
+        </div>
+      </section>
+      
+          
+          <!-- Partie sur mon profil avec petit paragraphe, mon cv, progress bar et image -->
+          <div id="Profil" class="p-5"></div>
+        <section   class=" py-5">
+           
+            <div class="" >
+                <div class="row align-items-center gy-5">
+                    <h2 class="mt-3 mb-5 fw-bold titre">Mon Profil</h2>
+                    <div class="fs-3 offset-lg-1 col-12 col-lg-7">
+                         <p>Etudiant en informatique spécialisé dans le développement. Ce portfolio retrace a travers divers catégories mes compétences ainsi que mon parcours </p>
+
+                    </div>
+                    <div class="offset-lg-1 col-12 col-lg-3">
+                      <div class="image-container d-flex justify-content-center">
+                        <img src="../portfolio/photo/swann_blop.png" alt="photo" class="img-fluid" >
+                        
+                      </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="row">
+                <div class="col-0 col-lg-2 "></div>
+                <!-- Progress Bar -->
+                <div class="col-12 col-lg-8 d-flex justify-content-center ">
+                <div class="row align-items-center gy-5 mt-4  container   ">
+                    <div class="col text-dark bg-secondary-subtle p-3 rounded" >
+                        <!--1 HTML CSS -->
+                        <div class="mb-3 p-3 bg-white rounded">
+                            <div class="row align-items-center">
+                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                                <div class="d-flex align-items-center">
+                                  <!-- ajouter icons -->
+                                  <i class="fa-brands fa-html5 fs-3 me-3"></i>
+                                  <p class="fw-bold m-0">HTML / CSS</p>
+                                  
+                                </div>
+                              </div>
+                              <div class="col" data-bs-toggle="tooltip" title="75%">
+                                <div class="progress">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                       aria-valuemax="100" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- 2 PHP-->
+                          <div class="mb-3 p-3 bg-white rounded">
+                            <div class="row align-items-center">
+                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                                <div class="d-flex align-items-center">
+                                  <!-- ajouter icons -->
+                                  <i class="fa-brands fa-php fs-3 me-3"></i>
+                                  <p class="fw-bold m-0">PHP</p>
+                                </div>
+                              </div>
+                              <div class="col" data-bs-toggle="tooltip" title="50%">
+                                <div class="progress">
+                                  <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                       aria-valuemax="100" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 3 -->
+                          <div class="mb-3 p-3 bg-white rounded">
+                            <div class="row align-items-center">
+                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                                <div class="d-flex align-items-center">
+                                  <!-- ajouter icons -->
+                                  <img src="../portfolio/icon/nextjs.svg" class="fs-3 me-3" alt="Bootstrap" width="32" height="32">
+                                  <p class="fw-bold m-0">Next Js</p>
+                                </div>
+                              </div>
+                              <div class="col" data-bs-toggle="tooltip" title="25%">
+                                <div class="progress">
+                                  <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                       aria-valuemax="100" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 4 -->
+                          <div class="mb-3 p-3 bg-white rounded">
+                            <div class="row align-items-center">
+                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                                <div class="d-flex align-items-center">
+                                  <!-- ajouter icons -->
+                                  <i class="fa-brands fa-bootstrap fs-3 me-2"></i>
+                                  <p class="fw-bold m-0 fs">Bootstrap</p>
+                                </div>
+                              </div>
+                              <div class="col" data-bs-toggle="tooltip" title="50%">
+                                <div class="progress">
+                                  <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                       aria-valuemax="100" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 5 -->
+                          <div class="mb-3 p-3 bg-white rounded">
+                            <div class="row align-items-center">
+                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                                <div class="d-flex align-items-center">
+                                  <!-- ajouter icons -->
+                                  <img src="../portfolio/icon/c.svg" class="fs-3 me-3 text-dark" alt="Bootstrap" width="32" height="32">
+                                  <p class="fw-bold m-0 ">C#</p>
+                                </div>
+                              </div>
+                              <div class="col" data-bs-toggle="tooltip" title="50%">
+                                <div class="progress">
+                                  <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                       aria-valuemax="100" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <!-- 6 -->
+                           <div class="mb-3 p-3 bg-white rounded">
+                            <div class="row align-items-center">
+                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                                <div class="d-flex align-items-center">
+                                  <!-- ajouter icons -->
+                                  <img src="../portfolio/icon/serveur-sql.svg" class="fs-2 me-3 text-dark" alt="Bootstrap" width="32" height="32">
+                                  <p class="fw-bold m-0">SQL</p>
+                                </div>
+                              </div>
+                              <div class="col" data-bs-toggle="tooltip" title="75%">
+                                <div class="progress">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                       aria-valuemax="100" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+                  <div class="row p-3">
+                  <div class="col text-center">
+                    <a href = "#Contact" >
+                       <button type = "button" class="btn btn-primary p-3 ps-5 pe-5 "> Me contacter </button>
+                    </a>
+                
+                      <a href = "../portfolio/photo/CV SWANN BASTE VERGEZ.pdf"
+                      target=_blank>
+                         <button type = "button" class="btn btn-primary p-3 ps-5 pe-5  mt-sm-0 mt-2 "></i>Mon CV</button><!-- pour telecharger mon cv -->
+                      </a>
+                  </div>
+                </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- section avec monparcours -->
+        <div id="Parcours" class="p-5"></div>
+        <section   class=" py-5">
+            <div >
+              <h2 class="mt-3 pb-5 fw-bold titre">Mon Parcours</h2>
+                <div class="align-items-center row ">
+                    
+                    <div class=" col-12 mt-4 ">
+                      <div class="box-timeline">
+
+                        <div class="ligne"></div>
+                
+                        <div class="rond r1 r-1" data-anim="1"></div>
+                        <div class="rond r2 r-1" data-anim="2"></div>
+                        <div class="rond r3 r-1" data-anim="3"></div>
+                        <div class="rond r4 r-1" data-anim="4"></div>
+                
+                
+                        <div class="box b1 rounded" data-anim="1">
+                            <h2><span class="fw-bold" data-bs-toggle="tooltip" title="Services Informatiques aux Organisations">BTS SIO</span> <br> 2023/2025</h2>
+                            <p>
+                               Dans le cadre de mes études au sein du Lycéee Jacques-Brel (Vénissieux) et en suivant la spécialité <span data-bs-toggle="tooltip" title="Solutions Logicielles et Applications Métiers"> SLAM</span>, j'ai pu acquérir de nouvelle connaissance et consolidé mes bases de programmation. 
+                            </p>
+                            
+                        </div>
+                        <div class="box b2 rounded" data-anim="2">
+                            <h2><span class="fw-bold">Commis de cuisine </span><br>Juin et Juillet 2023</h2>
+                            <p>
+                               La cuisine m'a toujours passionné et j'ai pu travailler au restaurant "La Fabrique" (Avignon) pour un job saisonnier durant le Festival d'Avignon.
+                            </p>
+                            
+                        </div>
+                        <div class="box b3 rounded" data-anim="3">
+                            <h2> <span class="fw-bold">Auto-Entrepreneur </span><br> Mai 2023</h2>
+                            <p>
+                               Je suis passé au statut d'auto-entrepreneur pour faire de la vente de service (livraison/informatique) et pour lancer ma boutique de E-commerce.
+                            </p>
+                            
+                        </div>
+                        <div class="box b4 rounded" data-anim="4">
+                            <h2><span class="fw-bold">Baccalauréat Général</span> <br> 2020/2023</h2>
+                            <p>
+                               J'ai passé mon bac général spécialité Siences Economiques et Sociales et Histoire de l'Art au Lycéee Théodore Aubanel (Avignon) et au Lycée Saint-Just (Lyon).
+                            </p>
+                            
+                        </div>
+                
+                    </div>
+                
+                      
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section avec tout mes projets et certifs-->
+        <div id="Projets" class="p-5"></div>
+        <section class="py-5">
+          <div>
+            
+              <h2 class="mt-3 pb-5 fw-bold titre" >Mes Projets personnels</h2>
+              
+              <div class="row d-flex justify-content-between align-items-center mt-5">
+                <div class="offset-1 col">
+                    <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                        <!-- bouttons avec les choix projets/certifs -->
+                        <input type="radio" class="btn-check" name="btnToggle" id="btnProjet" autocomplete="off" checked>
+                        <label class="btn btn-outline-light" for="btnProjet">Mes Projets</label>
+            
+                        <input type="radio" class="btn-check" name="btnToggle" id="btnCertif" autocomplete="off">
+                        <label class="btn btn-outline-light" for="btnCertif">Mes Certifications</label>
+                    </div>
+                </div>
+                <div class="col text-end ">
+                    <!-- Boutton pour voir plus -->
+                   
+                   <div class="btn-group">
+                    <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+                    <a href="#" class="btn btn-primary">Link</a>
+                    <a href="#" class="btn btn-primary">Link</a>
+                  </div>
+                </div>
+                
+            </div>
+         
+            
+            
+              <!-- Cards Projet -->
+              <div class="row mt-3 " id="CardProjet">
+                <div class="col-0 col-lg-2  "></div>
+                <div class="col-12 col-lg-8   ">
+                  <div class="row d-flex ">
+
+                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+                    <div class="card" >
+                      <img src="../portfolio/photo/c_sharp.png" class="card-img-top img-fluid" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">Résolveur d'un Sudoku en C#</h5>
+                        <p class="card-text">Durant ma première année de BTS, nous avons travaillé sur la création d'un résolveur de Sudoku</p>
+                        
+                         <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+                    <div class="card " >
+                      <img src="../portfolio/photo/nextJs.PNG" class="card-img-top img-fluid" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">Application de Météo en NextJs</h5>
+                        <p class="card-text">Cette application permet de connaître en direct la météo d'une ville. Elle m'a appris à gérer des API</p>
+                       
+                         <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
+                  <div class="card" >
+                      <img src="../portfolio/photo/php.png" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">Application de gestion en PHP</h5>
+                        <p class="card-text">Nous avons connecté PHP à une base de donnée pour gérer les employés d'une entreprise fictive</p>
+                       <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <div class=" col-12 col-md-6  col-xxl-3  mt-3 d-flex justify-content-center    "    data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   >
+                    <div class="card  " >
+                      <img src="../portfolio/photo/nextJs.png" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">Quiz en NextJs</h5>
+                        <p class="card-text">Voici une application de quiz que j'ai réalisé avec NextJs</p>
+                       <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none " id="newProjet"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
+                    <div class="card" >
+                      <img src="../portfolio/photo/nextJs.png" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">To Do List en NextJs</h5>
+                        <p class="card-text">Cette to do list à aussi été réalisé lors de mon auto-formation en NextJs</p>
+                       <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
+                    <div class="card" >
+                      <img src="../portfolio/photo/NoCode.png" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">Automatisation en No Code</h5>
+                        <p class="card-text">C'est en utilisant Make que j'ai automatisé Chat GPT avec Notion ou même des PDF via Excel </p>
+                       <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+                    <div class="card" >
+                      <img src="./photo/glpi.png" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">GLPI</h5>
+                        <p class="card-text">J'ai appris durant mes cours à gérer un parc informatique a l'aide de ce logiciel de gestion de parc</p>
+                       <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+
+                  <!-- <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+                    <div class="card" >
+                      <img src="https://picsum.photos/300/150?random=3" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">To Do List en NextJs</h5>
+                        <p class="card-text">Cette to do list à aussi été réalisé lors de mon auto-formation en NextJs</p>
+                       <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Voir le projet</a>
+                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  
+
+                
+              </div>
+            </div>
+              <div class="col-0 col-lg-2  "></div>
+            
+              </div>
+              <!-- Card Certification -->
+              <div class="row mt-3 " id="CardCertif" style="display: none;">
+                <div class="col-0 col-lg-2  "></div>
+                <div class="col-12 col-lg-8   ">
+                  <div class="row d-flex ">
+
+                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  "   data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+                    <div class="card" >
+                      <img src="../portfolio/photo/c_sharp.png" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">Les fondamentaux du C#</h5>
+                        <p class="card-text">J'ai suivi cette formation d'initiation au C# sur codelearn.io</p>
+                       <div class="mt-auto">
+                          <a href="../portfolio/certifications/c_sharp.pdf" target="_blank" class="btn btn-primary mt-1">Certification</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+           
+                
+                <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                  <div class="card" >
+                    <img src="../portfolio/photo/bootstrap.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column ">
+                      <h5 class="card-title">Bootstrap</h5>
+                      <p class="card-text">C'est via OpenClassRoom que j'ai découvert le framework Bootstrap en réalisant un portfolio fictif</p>
+                      <div class="mt-auto  ">
+                        <a href="../portfolio/certifications/bootstrap.pdf" target="_blank" class="btn btn-primary mt-1">Certification</a>
+                        <a href="../portfolio/projets/portfolio.html" target="_blank" class="btn btn-primary mt-1">Portfolio</a>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                  <div class="card" >
+                    <img src="../portfolio/photo/nextJs.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column ">
+                      <h5 class="card-title">NextJs</h5>
+                      <p class="card-text">Je me suis auto-formé en suivant des tutos youtube, grâce à Chat GPT, ou encore à l'aide des documentations sur Internet. Vous trouverez ce que j'ai réalisé en NextJs dans la partie "Projets"</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " id="newCertif" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                  <div class="card" >
+                      <img src="./photo/tailwind.png" class="card-img-top" alt="...">
+                      <div class="card-body d-flex flex-column ">
+                        <h5 class="card-title">Tailwind Css</h5>
+                        <p class="card-text">Grâce à Udemy, j'ai pu comprendre le fonctionnement de ce framework en réalisant un site vitrine Tesla</p>
+                         <div class="mt-auto">
+                          <a href="#" class="btn btn-primary mt-1">Certification</a>
+                          <a href="#" target="_blank" class="btn btn-primary mt-1">Portfolio</a>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+
+                <div class="col-12 col-md-6  col-xxl-3  mt-3 d-flex justify-content-center d-none " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                  <div class="card" >
+                    <img src="../portfolio/photo/java.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column ">
+                      <h5 class="card-title">Les fondamentaux du Java</h5>
+                      <p class="card-text">Je me suis rapidement intéressé au Java en suivant cette formation sur codelearn.io</p>
+                      <div class="mt-auto">
+                        <a href="../portfolio/certifications/java.pdf" target="_blank" class="btn btn-primary mt-1">Certification</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+             
+
+
+            <!--   <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none " id="newCertif" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="card" >
+                    <img src="https://picsum.photos/300/150?random=10" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column ">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <div class="mt-auto">
+                        <a href="#" class="btn btn-primary mt-1">Certification</a>
+                      </div>
+                    </div>
+                  </div>
+              </div> -->
+
+            </div>
+            </div>
+            <div class="col-0 col-lg-2 col-xxl-3 "></div>
+            </div>
+            
+            <div class="text-end pt-4">
+              <button id="voirPlusBtn" class="btn btn-primary">Voir plus</button>
+            </div>
+            </div>
+          
+      </section>
+      
+        <!-- Section Contact -->
+        <div  id="Contact" class="p-5"></div>
+        <section class=" pt-5 ">
+            
+              <h2 class="mt-3 pb-5 fw-bold titre">Contactez moi</h2>
+              <div class="d-flex justify-content-center align-items-center row mt-5 p-5 ">
+                
+                <div class="col-12 col-md-10 col-lg-7 mt-4 p-0 row " >
+                  
+                  <!-- Afficher le formulaire par défaut sur les écrans de taille moyenne (md) et supérieurs -->
+                  <div class="rounded d-md-block">
+                      <!-- Cette div affiche le bg sur les écrans plus petits que la taille moyenne (md) -->
+                      <div class="row">
+                        <div class="col-0  col-lg-2 col-xxl-3 "></div>
+                          <div class="bg-secondary-subtle rounded text-dark col-12 col-lg-8 col-xxl-6 d-flex justify-content-center">
+                              <form action="../portfolio/traitMail.php" class="col-12 p-3" method="post">
+                                  <label class="mb-1" for="nom">Nom</label><br><input type="text" class="form-control" name="nom" required><br>
+                                  <label class="mb-1" for="email">Votre Email</label><br><input type="email" class="form-control" name="mail" required><br>
+                                  <label class="mb-1" for="objet">Sujet du message</label><br><input type="text" class="form-control" name="objet" required><br>
+                                  <label class="mb-1" for="message">Votre message</label><br><textarea name="message" class="form-control" id="" cols="30" rows="10" required></textarea><br>
+                                  <input type="submit" class="btn btn-primary">
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                
+              </div>
+              
+                <div class="col-12 d-flex justify-content-center col-lg-5 mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.819255619813!2d4.878021777423936!3d45.694599118034915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c267d9dd9b89%3A0xb4831e2a3341bec3!2sLyc%C3%A9e%20Jacques%20Brel!5e0!3m2!1sfr!2sfr!4v1711896575948!5m2!1sfr!2sfr" width="900" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="p-5 map"></iframe>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer style="padding: 0;margin: 0 12px 0 0; " >
+      
+                
+      <div class="  mt-5" >
+        
+          
+          <div class="bg-light  d-flex align-items-center justify-content-center  p-2 pt-4 row" >
+           
+            <div class="text-dark fs-6 col-12 text-center"><p>Swann Basté Vergez - 2024</p></div>
+            <div class="col-12">
+              <ul class=" d-flex align-items-center justify-content-center list-unstyled fs-2 pe-3">
+                <a href="#" class="text-decoration-none text-primary" data-bs-toggle="tooltip" title="Linkedin"><li class="list-inline-item ms-3"><i class="bi bi-linkedin"></i></li></a>
+                <a href="#" class="text-decoration-none text-primary" data-bs-toggle="tooltip" title="Github"><li class="list-inline-item ms-3"><i class="bi bi-github"></i></li></a>
+                <a href="#" class="text-decoration-none text-primary" data-bs-toggle="tooltip" title="Mail"><li class="list-inline-item ms-3"><i class="bi bi-envelope-at"></i></li></a>
+              </ul>
+            </div>
+            <div class="col-12  text-center border-top pt-3" >
+              <ul class="">
+                <li class="list-item"><a href="#" style="text-decoration: none;" class="text-secondary">Conditions Générales d'utilisation</a></li>
+                <li class="list-item"><a href="#" style="text-decoration: none;" class="text-secondary">Mentions Légales</a></li>
+                <li class="list-item"><a href="#" style="text-decoration: none;" class="text-secondary">Politique de Confidentialité</a></li>
+              </ul>
+            </div>
+          </div>
+          
+      
+      </div>
+  
+  
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7823ce7968.js" crossorigin="anonymous"></script><!-- font awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><!-- jquery pour le scroll spy -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- script AOS (annimation) -->
+    <!--script bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Librairie pour timelaps -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- pour initialiser la librairie AOS -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- //script bootstrap scrollspy -->
+  <script>
+    $(document).ready(function(){
+      $('body').scrollspy({ target: '#navbar' });
+    });
+  </script>
+  <!-- script pour le offcanva de la nav -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  document.querySelectorAll('#navbarOffcanvasLg a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+
+          const offcanvas = document.getElementById('navbarOffcanvasLg');
+          const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+          bsOffcanvas.hide();
+      });
+  });
+</script>
+
+
+<!-- script bouton qui remonte -->
+<script>
+const bouton = document.querySelector('.bouton');
+
+window.addEventListener('scroll', () => {
+    // Détermine la position de défilement actuelle de la page
+    const positionDeScroll = window.scrollY;
+    
+    // Détermine la hauteur totale de la page
+    const hauteurDePage = document.documentElement.scrollHeight - window.innerHeight;
+    
+    // Si la position de défilement dépasse la limite où le bouton doit apparaître
+    if (positionDeScroll > hauteurDePage - 100) {
+        // Déplace le bouton vers le haut de 100px + 20px de marge
+        bouton.style.bottom = '130px';
+    } else {
+        // Réinitialise la position du bouton
+        bouton.style.bottom = '20px';
+    }
+
+    // Si la position de défilement dépasse une certaine limite, affiche le bouton
+    const limiteDeScrollAffichage = 500; // Par exemple, 500 pixels
+    if (positionDeScroll > limiteDeScrollAffichage) {
+        bouton.style.display = 'block';
+    } else {
+        bouton.style.display = 'none';
+    }
+});
+
+bouton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+</script>
+
+<!-- script tooltip -->
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+  <!--script time laps  -->
+  <script>
+    const allRonds = document.querySelectorAll('.rond');
+const allBoxes = document.querySelectorAll('.box');
+
+const controller = new ScrollMagic.Controller()
+
+allBoxes.forEach(box => {
+
+    for(i = 0; i < allRonds.length; i++){
+
+        if(allRonds[i].getAttribute('data-anim') === box.getAttribute('data-anim')){
+
+            let tween = gsap.from(box, {y: -50, opacity: 0, duration: 0.5})
+
+            let scene = new ScrollMagic.Scene({
+                triggerElement: allRonds[i],
+                triggerHook: 0.8, // Déclencher la scène à 70% de la hauteur de la fenêtre
+                reverse: false // Définir reverse sur false
+            })
+            .setTween(tween)
+            // .addIndicators()
+            .addTo(controller)
+
+        }
+
+    }
+
+})
+  </script>
+
+<!-- SCRIPT CARD -->
+
+<script> 
+/// Récupération des éléments HTML
+const btnProjet = document.getElementById('btnProjet');
+const btnCertif = document.getElementById('btnCertif');
+const CardProjet = document.getElementById('CardProjet');
+const CardCertif = document.getElementById('CardCertif');
+const voirPlusBtn = document.getElementById('voirPlusBtn');
+
+// Cacher les cartes supplémentaires
+const hideExtraCards = (cardContainer) => {
+    const cards = Array.from(cardContainer.querySelectorAll('.col-md-6'));
+    cards.slice(4).forEach(card => {
+        card.style.display = 'none';
+    });
+};
+
+// Afficher toutes les cartes
+const showAllCards = (cardContainer) => {
+    const cards = Array.from(cardContainer.querySelectorAll('.col-md-6'));
+    cards.forEach(card => {
+        card.style.display = 'flex';
+    });
+};
+
+// Ajouter un écouteur d'événements au bouton "Mes projets"
+btnProjet.addEventListener('click', function() {
+    CardProjet.style.display = 'flex';
+    CardCertif.style.display = 'none';
+    hideExtraCards(CardProjet);
+
+    // Ajouter la classe pour l'animation fade
+    CardProjet.classList.add('fade-in');
+    CardCertif.classList.remove('fade-in'); // Assurez-vous de retirer la classe de l'autre élément
+});
+
+// Ajouter un écouteur d'événements au bouton "Mes certifications"
+btnCertif.addEventListener('click', function() {
+    CardCertif.style.display = 'flex';
+    CardProjet.style.display = 'none';
+    hideExtraCards(CardCertif);
+
+    // Ajouter la classe pour l'animation fade
+    CardCertif.classList.add('fade-in');
+    CardProjet.classList.remove('fade-in'); // Assurez-vous de retirer la classe de l'autre élément
+});
+
+
+// Ajouter un écouteur d'événements au bouton "Voir plus"
+voirPlusBtn.addEventListener('click', function() {
+    const cardContainer = document.querySelector('.btn-check:checked').id === 'btnProjet' ? CardProjet : CardCertif;
+    const cards = Array.from(cardContainer.querySelectorAll('.col-md-6'));
+
+    cards.slice(4).forEach(card => {
+        if (card.classList.contains('d-none')) {
+            card.classList.remove('d-none');
+            voirPlusBtn.textContent = 'Voir moins';
+        } else {
+            card.classList.add('d-none');
+            voirPlusBtn.textContent = 'Voir plus';
+        }
+    });
+
+    // Supprimer et réappliquer la classe pour l'animation fade
+    if (cardContainer === CardProjet) {
+        CardProjet.classList.remove('fade-in');
+        setTimeout(() => {
+            CardProjet.classList.add('fade-in');
+        }, 10);
+        CardCertif.classList.remove('fade-in'); // Assurez-vous de retirer la classe de l'autre élément
+    } else {
+        CardCertif.classList.remove('fade-in');
+        setTimeout(() => {
+            CardCertif.classList.add('fade-in');
+        }, 10);
+        CardProjet.classList.remove('fade-in'); // Assurez-vous de retirer la classe de l'autre élément
+    }
+
+    
+});
+
+
+
+
+   </script> 
+</body>
+</html>

@@ -111,7 +111,7 @@
                     </div>
                     <div class="offset-lg-1 col-12 col-lg-3">
                       <div class="image-container d-flex justify-content-center">
-                        <img src="../portfolio/photo/swann_blop.png" alt="photo" class="img-fluid" >
+                        <img src="./photo/swann_blop.png" alt="photo" class="img-fluid" >
                         
                       </div>
                     </div>
@@ -170,7 +170,7 @@
                               <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                                 <div class="d-flex align-items-center">
                                   <!-- ajouter icons -->
-                                  <img src="../portfolio/icon/nextjs.svg" class="fs-3 me-3" alt="Bootstrap" width="32" height="32">
+                                  <img src="./icon/nextjs.svg" class="fs-3 me-3" alt="Bootstrap" width="32" height="32">
                                   <p class="fw-bold m-0">Next Js</p>
                                 </div>
                               </div>
@@ -208,7 +208,7 @@
                               <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                                 <div class="d-flex align-items-center">
                                   <!-- ajouter icons -->
-                                  <img src="../portfolio/icon/c.svg" class="fs-3 me-3 text-dark" alt="Bootstrap" width="32" height="32">
+                                  <img src="./icon/c.svg" class="fs-3 me-3 text-dark" alt="Bootstrap" width="32" height="32">
                                   <p class="fw-bold m-0 ">C#</p>
                                 </div>
                               </div>
@@ -227,7 +227,7 @@
                               <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                                 <div class="d-flex align-items-center">
                                   <!-- ajouter icons -->
-                                  <img src="../portfolio/icon/serveur-sql.svg" class="fs-2 me-3 text-dark" alt="Bootstrap" width="32" height="32">
+                                  <img src="./icon/serveur-sql.svg" class="fs-2 me-3 text-dark" alt="Bootstrap" width="32" height="32">
                                   <p class="fw-bold m-0">SQL</p>
                                 </div>
                               </div>
@@ -251,7 +251,7 @@
                        <button type = "button" class="btn btn-primary p-3 ps-5 pe-5 "> Me contacter </button>
                     </a>
                 
-                      <a href = "../portfolio/photo/CV SWANN BASTE VERGEZ.pdf"
+                      <a href = "./photo/CV SWANN BASTE VERGEZ.pdf"
                       target=_blank>
                          <button type = "button" class="btn btn-primary p-3 ps-5 pe-5  mt-sm-0 mt-2 "></i>Mon CV</button><!-- pour telecharger mon cv -->
                       </a>
@@ -363,12 +363,42 @@
                         
                          <div class="mt-auto">
                           <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                          <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalSudoku">Détails</button>
+                          
                         </div>
                         
                       </div>
                     </div>
                   </div>
+                  <!-- Modal -->
+                  <div class="modal fade text-dark" id="ModalSudoku" tabindex="-1" aria-labelledby="ModalSudokuLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalSudokuLabel">Résolveur de Sudoku en C#</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Dans le cadre de nos cours en C# de début de première année en BTS SIO, nous avons été amenés a réalisé ce résolveur de sudoku. Cet exercice était individuel et nous a permis une première approche sur les tableaux à 3 dimensions.</p>
+                          <h3>Besoin</h3>
+                          <p>La réalisation nous a demandé de s’informer sur ce qu’étais un tableau tridimensionnel et puis comment s’en servit pour mener à bien ce projet. Ensuite, nous avons dû nous interroger sur la logique de programmation a adopter pour que le résolveur fonctionne.</p>
+                          <h3>Environnement</h3>
+                          <p>Pour ce projet, nous nous sommes aidés de l’éditeur de texte Visual Studio Entreprise et avons utilisé le langage de programmation C#. Pour l’affichage, nous avons simplement utilisé l’outil d’affichage inclus dans Visual Studio Entreprise.</p>
+                          <h3>Réalisation</h3>
+                          <p>C’est personnellement grâce à des documentations C# et à différents types d’aides trouvés sur Internet que j’ai pu mener à bien ce projet. Pour la compréhension de la logique à adopté, mon professeur tout comme des tutos YouTube m’ont été utiles</p>
+                          <h3>Bilan</h3>
+                          <p>Ce résolveur de Sudoku a pour but de devoir entrer un sudoku incomplet dans le programme afin de le faire compléter par ce dernier le plus rapidement possible. Le problème de ce programme est que c’est assez long de devoir remplir chacune des 81 cases qui complète un sudoku.
+                          </p>
+                          <h3>Compétences</h3>
+                          <p>Durant ce projet de résolveur de sudoku, j’ai développé différentes compétences. La principale est bien évidemment l’utilisation d’un tableau a 3 dimensions en C#. Mais aussi le fait de devoir me débrouiller par moi même pour chercher des documentations ou d’autres informations pouvant m’aider à réaliser mon projet.
+                          </p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                
                   
                   <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
                     <div class="card " >
@@ -379,9 +409,35 @@
                        
                          <div class="mt-auto">
                           <a href="https://meteo-silk.vercel.app/" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                          <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalMétéo">Détails</button>
                         </div>
                         
+                      </div>
+                    </div>
+                  </div>
+                    <!-- Modal -->
+                  <div class="modal fade text-dark" id="ModalMétéo" tabindex="-1" aria-labelledby="ModalMétéoLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalMétéoLabel">Application Météo en NextJS</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Pour mon stage de fin de ma première année de BTS SIO , mon employeur m’a demandé de me former et de créer différents projets pour m’adapter aux outils que j’utiliserai. J’ai donc crée 3 projets, dont celui-ci qui est une application de Météo.</p>
+                          <h3>Besoin</h3>
+                          <p>Pour réaliser ce projet, j’ai dû regarder plusieurs tutos YouTube pour créer une structure de projets a l’aide de NodeJS. Ensuite, spécifiquement, pour ce projet, je me suis renseigné sur l’utilisation de l’API openweather pour avoir accès aux différentes données météorologiques en temps réel.</p>
+                          <h3>Environnement</h3>
+                          <p>Afin de créer cette application de météo, j’ai premièrement installé NodeJS sur ma machine. Puis j’ai utilisé sur l’éditeur de texte Visual Studio Code le terminal pour installer les différents outils liés à NodeJS pour créer la structure de mon projet. J’ai aussi intégré une API me donnant l’accès aux données météorologique en temps réel.</p>
+                          <h3>Réalisation</h3>
+                          <p>Une fois la structure de mon projet réalisé grâce a NodeJS, j’ai récupéré l’API sur le site d’open weather. J’ai dû la connecter sur ma page grâce au lien et à la clé fournie par le site. Ensuite, j’ai pu manipuler les données que je souhaitais pour mener à bien mon projet. Pour le front de la page, j’ai utilisé le framworks Bootstrap.</p>
+                          <h3>Bilan</h3>
+                          <p>Cette application de météo permet donc de rentrer n’importes quelles villes du monde dans une barre de recherche. Une fois la ville rentrée, on accède à là l’heure locale de la ville, sa température, à son taux d'humidité, à la vitesse du vent en km/h et au ressenti réel. </p>
+                          <h3>Compétences</h3>
+                          <p>Grace a ce projet, j’ai amélioré ma compréhension de la structure d’un projet NextJS, mais aussi la compréhension de l’utilisation d’une API dans un fichier NextJS. En effet, j’ai appris à manipuler ces données grâce a des fonctions principalement.</p>
+                        </div>
+                       
                       </div>
                     </div>
                   </div>
@@ -395,27 +451,39 @@
                         <p class="card-text">Nous avons connecté PHP à une base de donnée pour gérer les employés d'une entreprise fictive</p>
                        <div class="mt-auto">
                           <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                          <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalPHP">Détails</button>
                         </div>
                       </div>
                     </div>
                 </div>
-
-                  <div class=" col-12 col-md-6  col-xxl-3  mt-3 d-flex justify-content-center    "    data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   >
-                    <div class="card  " >
-                      <img src="./photo/nextJs.png" class="card-img-top" alt="...">
-                      <div class="d-flex flex-column card-body ">
-                        <h5 class="card-title">Quiz en NextJs</h5>
-                        <p class="card-text">Voici une application de quiz que j'ai réalisé avec NextJs</p>
-                       <div class="mt-auto">
-                          <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                  <!-- Modal -->
+                  <div class="modal fade text-dark" id="ModalPHP" tabindex="-1" aria-labelledby="ModalPHPLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalPHPLabel">Application de gestion en PHP</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Durant mes cours de programmation au cours de ma première année de BTS SIO, nous avons abordé le thème de la connexion d’une base de données avec php. Cette application de gestion d’employé a donc été un très bon apprentissage pour réaliser cet objectif.</p>
+                          <h3>Besoin</h3>
+                          <p>Pour réalisé ce projet de gestion, nous avons eu besoin de nous familiariser avec le langage de programmation PHP et notamment comment le connecter à une base de données. Après cette étape, il a fallu comprendre comment envoyer des requêtes SQL à la base de données.</p>
+                          <h3>Environnement</h3>
+                          <p>En utilisant le langage de programmation PHP sur Visual Studio Code ainsi qu’un serveur WAMP. Ce dernier a permis de lancer le projet PHP en local, mais aussi d’avoir accès à une base de données sur PHP my Admin.</p>
+                          <h3>Réalisation</h3>
+                          <p>Une fois le serveur WAMP en route, il a fallu créer la base de données puis leurs tables avec leurs différents champs la composant. Une fois fait, il a fallu connecter notre fichier PHP avec la base de données puis créer les différents fichiers faisant des requête SQL d’ajout, de suppression, d’affichage ou même de modification. Pour le front de la page, j’ai utilisé le framworks Bootstrap.</p>
+                          <h3>Bilan</h3>
+                          <p>Dans ce projet de gestion d’employé, on retrouve dans le menu principal avec les options suivantes : … Ces différentes pages permettent donc de gérer les différents employés d’une entreprise et de manipuler leurs données virtuelles.</p>
+                          <h3>Compétences</h3>
+                          <p>Grace a cette application, je me suis familiarisé avec l’utilisation de PHP, mais surtout avec la connexion et l’interaction entre PHP et une base de données. De plus, j’ai pu réellement utiliser un serveur WAMP (que je n’avais vu qu’en théorie).</p>
+                        </div>
+                       
                       </div>
                     </div>
                   </div>
 
-                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none " id="newProjet"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
+                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center " id="newProjet"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
                     <div class="card" >
                       <img src="./photo/nextJs.png" class="card-img-top" alt="...">
                       <div class="d-flex flex-column card-body ">
@@ -423,13 +491,84 @@
                         <p class="card-text">Cette to do list à aussi été réalisé lors de mon auto-formation en NextJs</p>
                        <div class="mt-auto">
                           <a href="https://to-do-list-phi-indol.vercel.app/" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                          <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalTodo" >Détails</button>
                         </div>
                       </div>
                     </div>
                   </div>
+                    <!-- Modal -->
+                  <div class="modal fade text-dark" id="ModalTodo" tabindex="-1" aria-labelledby="ModalTodoLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalTodoLabel">To Do List en NextJS</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Pour mon stage de fin de ma première année de BTS SIO, mon employeur m’a demandé de me former et de créer différents projets pour m’adapter aux outils que j’utiliserai. J’ai donc crée 3 projets, dont celui-ci qui est une application de To Do List.</p>
+                          <h3>Besoin</h3>
+                          <p>Ce projet a été mon premier projet en NextJS, j’ai donc passé beaucoup de temps a créer la structure de mon projet en trouvant les lignes de commande dont j’avais besoin. Ensuite, j’ai dû me renseigné sur le fonctionnement de ce framworks sur des tutos YouTube.</p>
+                          <h3>Environnement</h3>
+                          <p>Afin de créer cette application de to do list, j’ai premièrement installé NodeJS sur ma machine. Puis j’ai utilisé sur l’éditeur de texte Visual Studio Code le terminal pour installer les différents outils liés à NodeJS pour créer la structure de mon projet. 
+                          </p>
+                          <h3>Réalisation</h3>
+                          <p>Pour ce projet, j’ai utilisé Chat GPT pour trouver l’idée de ce projet simple, puis j’ai suivi un tuto YouTube pour comprendre les bases du fonctionnement de NextJS et la logique de la To Do List. Pour finir, j’ai utilisé Bootstrap pour le front de la page et Chat GPT pour améliorer quelques détails.</p>
+                          <h3>Bilan</h3>
+                          <p>Sur cette application, on retrouve donc une barre de recherche pour nous permettre d’entrer notre tache. Une fois rentré, on peut cocher la tache pour indiquer qu’elle est faite. En dessous des taches, on retrouve un compteur avec les taches à faire (non coché) et un autre avec celle faites (coché).</p>
+                          <h3>Compétences</h3>
+                          <p>Créer ce projet m’a donc permis de me former au framwoks NextJS et la logique de la To Do List. J’ai aussi passé beaucoup de temps à comprendre comment fonctionnait NodeJS pour créer le projet.</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
 
-                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
+                  <div class=" col-12 col-md-6  col-xxl-3  mt-3 d-flex justify-content-center   d-none  "    data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   >
+                    <div class="card  " >
+                      <img src="./photo/nextJs.png" class="card-img-top" alt="...">
+                      <div class="d-flex flex-column card-body ">
+                        <h5 class="card-title">Quiz en NextJs</h5>
+                        <p class="card-text">Voici une application de quiz que j'ai réalisé avec NextJs</p>
+                       <div class="mt-auto">
+                          <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
+                          <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalQuiz">Détails</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- Modal -->
+                  <div class="modal fade text-dark" id="ModalQuiz" tabindex="-1" aria-labelledby="ModalQuizLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalQuizLabel">Quiz en NextJs</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Pour mon stage de fin de ma première année de BTS SIO, mon employeur m’a demandé de me former et de créer différents projets pour m’adapter aux outils que j’utiliserai. J’ai donc crée 3 projets, dont celui-ci qui est une application de Quiz.</p>
+                          <h3>Besoin</h3>
+                          <p>Ce second projet en NextJS m’a demandé un peu moins de temps pour créer la structure du projet avec NodeJS. Cependant, j’ai dû prendre le temps de créer un fichier contenant toutes les données du quiz avec les questions et les réponses.</p>
+                          <h3>Environnement</h3>
+                          <p>Afin de créer cette application de quiz, j’ai premièrement installé NodeJS sur ma machine. Puis j’ai utilisé sur l’éditeur de texte Visual Studio Code le terminal pour installer les différents outils liés à NodeJS pour créer la structure de mon projet. J’ai aussi créé un fichier « data » regroupant les différentes questions et réponses.
+                          </p>
+                          <h3>Réalisation</h3>
+                          <p>Pour créer cette application de quiz, je me suis aidé d’un tuto sur YouTube qui m’a assisté pour les différentes étapes. Après la structure et le fichier regroupant toutes les données, j’ai donc crée la page principale regroupant les différents quiz crée auparavant. Pour le front de la page, j’ai utilisé le framworks Bootstrap.</p>
+                          <h3>Bilan</h3>
+                          <p>Dans cette application, on retrouve donc 3 quiz sur différents thèmes : l’Histoire, la Géographie, et la Physique. En répondant aux différentes questions, on obtient 5 points par bonne réponse. Puis après avoir répondu aux 5 questions, on obtient notre score et le pourcentage de réponses juste.</p>
+                          <h3>Compétences</h3>
+                          <p>Ce projet m’a permis de comprendre le principe de la création de la structure du projet via les commandes NodeJS sur un terminal. Mais aussi de la création d’une page destinés a regroupé les différentes données du quiz en Javascript.
+                          </p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+
+                 
+
+                  <!-- <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
                     <div class="card" >
                       <img src="./photo/NoCode.png" class="card-img-top" alt="...">
                       <div class="d-flex flex-column card-body ">
@@ -437,11 +576,25 @@
                         <p class="card-text">C'est en utilisant Make que j'ai automatisé Chat GPT avec Notion ou même des PDF via Excel </p>
                        <div class="mt-auto">
                           <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                          <button  class="btn btn-primary mt-1">Détails</button>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
+                    <!-- Modal -->
+                  <!-- <div class="modal fade text-dark" id="ModalSudoku" tabindex="-1" aria-labelledby="ModalSudokuLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalSudokuLabel">Résolveur de Sudoku </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div> -->
 
                     <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
                     <div class="card" >
@@ -451,11 +604,37 @@
                         <p class="card-text">J'ai appris durant mes cours à gérer un parc informatique a l'aide de ce logiciel de gestion de parc</p>
                        <div class="mt-auto">
                           <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                          <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalGLPI">Détails</button>
                         </div>
                       </div>
                     </div>
                   </div> 
+                    <!-- Modal -->
+                  <div class="modal fade text-dark" id="ModalGLPI" tabindex="-1" aria-labelledby="ModalGLPILabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalGLPILabel">GLPI</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <h3>Contexte</h3>
+                        <p>GLPI est un outil gratuit permettant de gérer le parc informatique d’une entreprise ou de toutes autres établissement. Durant ma première année de BTS SIO, nous avons pu apprendre a utilisé cet outil pour gérer le parc informatique de notre établissement.</p>
+                        <h3>Besoin</h3>
+                        <p>Tout d’abord, nous avons eu besoin de créer une machine virtuelle vierge sous Debian (Linux) pour réaliser notre projet dessus. Ensuite, nous avons dû configurer GLPI sur le réseau de notre établissement afin qu’il accède à son parc informatique. </p>
+                        <h3>Environnement</h3>
+                        <p>Pour que le projet soit mené à bien, nous avons créé une machine virtuelle pour qu’aucun élément extérieur n’affecte notre projet. Cette machine virtuelle a permis de parfaitement configurer GLPI sur le parc informatique de notre établissement.</p>
+                        <H3>Réalisation</H3>
+                        <p>Pour créer la machine virtuelle, nous avons pu la créer sur la ferme de serveur de notre lycée. Ensuite, grâce au terminal Debian, nous avons pu configurer GLPI pour qu’il accède a notre parc informatique, ce qui nous a permis d'effectuer différentes actions sur le ce dernier.
+                        </p>
+                        <h3>Bilan</h3>
+                        <p>Ce projet nous a permis de pouvoir accéder au parc informatique de notre établissement et de pouvoir ainsi interagir avec ce dernier. En effet, nous avons pu supprimer des logiciels de différentes machines, ou encore d’observer les machines externes connectées a notre machine.</p>
+                        <h3>Compétences</h3>
+                        <p>En réalisant cette activité, nous avons pu nous initier à la gestion du parc informatique d’une entreprise. Cette compétence nous sera utile dans le monde professionnel.</p>
+                      </div>
+                    </div>
+                  </div>
 
                   <!-- <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
                     <div class="card" >
@@ -465,7 +644,7 @@
                         <p class="card-text">Cette to do list à aussi été réalisé lors de mon auto-formation en NextJs</p>
                        <div class="mt-auto">
                           <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
-                          <a href="#" class="btn btn-primary mt-1">Détails</a>
+                          <button  class="btn btn-primary mt-1">Détails</button>
                         </div>
                       </div>
                     </div>
@@ -633,9 +812,143 @@
             </div>
             <div class="col-12  text-center border-top pt-3" >
               <ul class="">
-                <li class="list-item"><a href="#" style="text-decoration: none;" class="text-secondary">Conditions Générales d'utilisation</a></li>
-                <li class="list-item"><a href="#" style="text-decoration: none;" class="text-secondary">Mentions Légales</a></li>
-                <li class="list-item"><a href="#" style="text-decoration: none;" class="text-secondary">Politique de Confidentialité</a></li>
+                <!-- Condition général utilisation -->
+                <li class="list-item text-secondary "  data-bs-toggle="modal" data-bs-target="#ModalCGU" style="text-decoration: none; cursor: pointer; list-style: none;" >Conditions Générales d'utilisation</li>
+                <!-- Modal -->
+                <div class="modal fade" id="ModalCGU" tabindex="-1" aria-labelledby="ModalCGULabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header text-dark">
+                        <h1 class="modal-title fs-5" id="ModalCGULabel">Conditions Générales d'Utilisation</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-dark text-start ">
+                        <p>Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet l'encadrement juridique des modalités de mise à disposition du site et des services par Swann Basté Vergez et de définir les conditions d’accès et d’utilisation des services par « l'Utilisateur ».</p><br><br>
+                        <h3>Article 1 : Les mentions légales</h3><br>
+                        <p>L’édition et la direction de la publication du site Portfolio-Swann  est assurée par Swann Baste-Vergez. <br>
+                          Numéro de téléphone : 0659786937 <br>
+                          Adresse e-mail : swannvrg@gmail.com.<br>
+                          
+                          L'hébergeur du site Github est la société Github, dont le siège social est situé aux Etat-Unis</p><br><br>
+                          <h3>Article 2 : Accès au site</h3><br>
+                          <p>Le site Portfolio-Swann permet à l'Utilisateur un accès gratuit aux services suivants :
+                            Le site internet propose les services suivants : <br>
+                            Site vitrine présentant les compétences informatique de Swann Basté Vergez <br>
+                            Le site est accessible gratuitement en tout lieu à tout Utilisateur ayant un accès à Internet. Tous les frais supportés par l'Utilisateur pour accéder au service (matériel informatique, logiciels, connexion Internet, etc.) sont à sa charge.
+                            </p><br><br>
+                            <h3>Article 3 : Collecte des données</h3><br>
+                            <p>Le site assure à l'Utilisateur une collecte et un traitement d'informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. En revanche, aucune donnée à caractère personnelles n’est pour l’instant collectés par le site  Portfolio-Swann</p><br>
+                            <p>En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données personnelles. </p><br><br>
+                            <h3>Article 4 : Propriété intellectuelle</h3><br>
+                            <p>Les marques, logos, signes ainsi que tous les contenus du site (textes, images, son…) font l'objet d'une protection par le Code de la propriété intellectuelle et plus particulièrement par le droit d'auteur. <br>
+
+                              L'Utilisateur doit solliciter l'autorisation préalable du site pour toute reproduction, publication, copie des différents contenus. Il s'engage à une utilisation des contenus du site dans un cadre strictement privé, toute utilisation à des fins commerciales et publicitaires est strictement interdite.<br>
+                              
+                              Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l’autorisation expresse de l’exploitant du site Internet constituerait une contrefaçon sanctionnée par l’article L 335-2 et suivants du Code de la propriété intellectuelle.<br>
+                              
+                              Il est rappelé conformément à l’article L122-5 du Code de propriété intellectuelle que l’Utilisateur qui reproduit, copie ou publie le contenu protégé doit citer l’auteur et sa source.</p><br><br>
+                              <h3>Article 5 : Responsabilité</h3><br>
+                              <p>Les sources des informations diffusées sur le site  Portfolio-Swann sont réputées fiables mais le site ne garantit pas qu’il soit exempt de défauts, d’erreurs ou d’omissions. <br>
+
+                                Les informations communiquées sont présentées à titre indicatif et général sans valeur contractuelle. Malgré des mises à jour régulières, le site Portfolio-Swann ne peut être tenu responsable de la modification des dispositions administratives et juridiques survenant après la publication. De même, le site ne peut être tenue responsable de l’utilisation et de l’interprétation de l’information contenue dans ce site.<br>
+                                Le site Portfolio-Swann ne peut être tenu pour responsable d’éventuels virus qui pourraient infecter l’ordinateur ou tout matériel informatique de l’Internaute, suite à une utilisation, à l’accès, ou au téléchargement provenant de ce site.<br>
+                                
+                                La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers.</p><br><br>
+                                <h3>Article 6 : Liens hypertextes</h3><br>
+                                <p>Des liens hypertextes peuvent être présents sur le site. L’Utilisateur est informé qu’en cliquant sur ces liens, il sortira du site  Portfolio-Swann. Ce dernier n’a pas de contrôle sur les pages web sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu.</p><br><br>
+                                <h3>Article 7 : Cookies</h3>
+                                <p>L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation. <br>
+
+                                  Les cookies sont de petits fichiers stockés temporairement sur le disque dur de l’ordinateur de l’Utilisateur par votre navigateur et qui sont nécessaires à l’utilisation du site  Portfolio-Swann. Les cookies ne contiennent pas d’information personnelle et ne peuvent pas être utilisés pour identifier quelqu’un. Un cookie contient un identifiant unique, généré aléatoirement et donc anonyme. Certains cookies expirent à la fin de la visite de l’Utilisateur, d’autres restent.<br>
+                                  
+                                  L’information contenue dans les cookies est utilisée pour améliorer le site   Portfolio-Swann.<br>
+                                  
+                                  En naviguant sur le site, L’Utilisateur les accepte.
+                                  L’Utilisateur pourra désactiver ces cookies par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.</p><br><br>
+                                  <h3>Article 8 : Publication par l’Utilisateur</h3><br>
+                                  <p>Le site ne permet pas aux membres de publier tous types de contenus.</p><br><br>
+                                  <h3>Article 9 : Droit applicable et juridiction compétente</h3><br>
+                                  <p>La législation française s'applique au présent contrat. En cas d'absence de résolution amiable d'un litige né entre les parties, les tribunaux français seront seuls compétents pour en connaître.
+                                    Pour toute question relative à l’application des présentes CGU, vous pouvez joindre l’éditeur aux coordonnées inscrites à l’ARTICLE 1.</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Mention Légal -->
+                <li class="list-item text-secondary  "  data-bs-toggle="modal" data-bs-target="#ML" style="text-decoration: none; cursor: pointer; list-style: none;" >Mentions Légales</li>
+                <!-- Modal -->
+                <div class="modal fade text-dark" id="ML" tabindex="-1" aria-labelledby="#MLLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="#MLLabel">Mentions Légales</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-start">
+                        <p>Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l’ « Utilisateur », du site Portfolio-Swann, ci-après le « Site », les présentes mentions légales. <br>
+
+                          La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.
+                          </p><br><br>
+                          <h3>Article 1 - L'EDITEUR</h3><br>
+                          <p>L’édition et la direction de la publication du Site est assurée par Swann Baste-Vergez dont le numéro de téléphone est 0659786937, et l'adresse e-mail swannvrg@gmail.com.</p><br><br>
+                          <h3>Article 2 - L'HEBERGEUR</h3><br>
+                          <p>L'hébergeur du Site est la société Github,  dont le siège social est situé aux Etat-Unis</p><br><br>
+                          <h3>Article 3 - ACCES AU SITE</h3><br>
+                          <p>Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance. <br>
+
+                            En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être tenu responsable.</p><br><br>
+                            <h3>Article 4 - COLLECTE DES DONNEES</h3><br>
+                            <p>Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant les utilisateurs. <br>
+ 
+                              Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site﻿, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Politique de Confidentalité -->
+                <li class="list-item text-secondary" href="#" style="text-decoration: none; cursor: pointer; list-style: none;" data-bs-toggle="modal" data-bs-target="#ModalPC">Politique de Confidentialité</li>
+                <!-- Modal -->
+                <div class="modal fade text-dark" id="ModalPC" tabindex="-1" aria-labelledby="ModalPCLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalPCLabel">Politique de Confidentalité</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-start">
+                        <h3>Article 1 : PRÉAMBULE</h3><br>
+                        <p>La présente politique de confidentialité vise à informer les utilisateurs du site Swann Portfolio sur la manière dont sont gérées les données personnelles transmises via le formulaire de contact. <br>
+                          Cette politique complète les mentions légales et les Conditions Générales d’Utilisation consultables par les utilisateurs à l’adresse suivante : [Insérer l’URL permettant d'accéder aux Conditions Générales d’Utilisation et aux mentions Légales]
+                          </p><br><br>
+                          <h3>Article 2 : PRINCIPES RELATIFS À LA COLLECTE ET AU TRAITEMENT DES DONNÉES PERSONNELLES</h3><br>
+                          <p>Conformément aux dispositions du formulaire de contact, les données personnelles sont traitées uniquement dans le but de permettre à l'utilisateur de contacter Swann Portfolio via e-mail. <br>
+                            Le traitement est licite car il repose sur le consentement explicite de l'utilisateur, manifesté par l'envoi volontaire du formulaire de contact.</p>
+                            <h3>Article 3 : DONNÉES À CARACTÈRE PERSONNEL COLLECTÉES ET TRAITÉES DANS LE CADRE DE LA NAVIGATION SUR LE SITE</h3>
+                            <p><u>Article 3.1 :</u>  Données collectées <br>
+                              Aucune donnée personnelle n'est collectée ou stockée dans une base de données lors de l'utilisation du site Swann Portfolio. <br>
+                             <u>Article 3.2 :</u>  Mode de collecte des données <br>
+                              Les données personnelles sont uniquement collectées lorsque l'utilisateur utilise le formulaire de contact pour envoyer un message à Swann Portfolio. Les informations transmises par ce formulaire sont directement envoyées par e-mail à l'adresse de contact de Swann Portfolio. <br>
+                              <u>Article 3.3 : </u>Hébergement des données <br>
+                                Aucune donnée personnelle n'est stockée sur le site Swann Portfolio. Les informations transmises via le formulaire de contact sont directement envoyées par e-mail à l'adresse de contact de Swann Portfolio. <br>
+                                
+                            </p> <br>
+                            <h3>Article 4 : RESPONSABLE DU TRAITEMENT DES DONNÉES</h3><br>
+                            <p><u>Article 4.1 :</u> Le responsable du traitement des données
+                              Les données à caractère personnel transmises via le formulaire de contact sont traitées par Swann Basté Vergez, joignable aux coordonnées suivantes : <br>
+                              Par téléphone : 0659786937 <br>
+                              Par e-mail : swannvrg@gmail.com</p> <br><br>
+                              <h3>Article 5 : LES DROITS DES UTILISATEURS EN MATIÈRE DE COLLECTE ET DE TRAITEMENT DES DONNÉES</h3> <br>
+                              <p>Les utilisateurs ne fournissent aucune donnée personnelle stockée sur le site. Ils peuvent contacter Swann Portfolio par téléphone ou par e-mail pour toute question relative à la protection des données.</p> <br><br>
+                              <h3>Article 6 : CONDITIONS DE MODIFICATION DE LA POLITIQUE DE CONFIDENTIALITÉ</h3> <br>
+                              <p>Swann Basté Vergez se réserve le droit de modifier la présente Politique à tout moment. Les utilisateurs sont invités à consulter régulièrement cette politique pour être informés des éventuels changements. <br> <br>
+                                La présente politique, éditée le 17/04/2024, a été mise à jour le 17/04/2024.</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
               </ul>
             </div>
           </div>

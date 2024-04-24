@@ -33,7 +33,7 @@
       <!-- côté invisible pour le style de la navbar -->
       <div class="bg-light mt-3 col-10 col-lg-8 col-xl-6  rounded-3 pt-2 pb-2 ">
           <div class="d-flex justify-content-between ">
-              <a class="navbar-brand active-md d-md-none text-primary" href="#">Acceuil</a>
+              <a class="navbar-brand active-md d-md-none text-primary" href="#Accueil">Accueil</a>
               <span class="navbar-brand d-md-none text-primary">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,16 +41,19 @@
                 
             </span>
           </div>
-          <ul class="nav nav-pills color-dark row d-flex text-center text-dark d-none d-md-flex">
+          
+            <!-- liste avec les différentes parties -->
+            <ul class="nav nav-pills color-dark d-flex justify-content-around text-center text-dark d-none d-md-flex px-3">
               <!-- liste avec les différentes parties -->
-              <li class="col-2 nav-item"><a class="nav-link active" href="#Accueil">Accueil</a></li>
-              <li class="col-2 nav-item"><a class="nav-link" href="#Profil">Profil</a></li>
-              <li class="col-2 nav-item"><a class="nav-link" href="#Parcours">Parcours</a></li>
-              <li class="col-2 nav-item"><a class="nav-link" href="#Projets">Projets</a></li>
-              
-              <li class="col-2 nav-item"><a class="nav-link" href="#Veille">Veille</a></li>
-              <li class="col-2 nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+              <li class="nav-item col"><a class="nav-link active" href="#Accueil">Accueil</a></li>
+              <li class="nav-item col"><a class="nav-link" href="#Profil">Profil</a></li>
+              <li class="nav-item col"><a class="nav-link" href="#Parcours">Parcours</a></li>
+              <li class="nav-item col"><a class="nav-link" href="#Projets">Projets</a></li>
+              <li class="nav-item col"><a class="nav-link" href="#Contact">Contact</a></li>
           </ul>
+          
+        
+        
       </div>
       
       <!-- côté invisible pour le style de la navbar -->
@@ -64,11 +67,11 @@
       <div class="offcanvas-body">
           <ul class="nav nav-pills flex-column">
               <!-- liste avec les différentes parties -->
-              <li class="nav-item"><a class="nav-link text-dark border-top" href="#Accueil">Acceuil</a></li>
+             
               <li class="nav-item"><a class="nav-link text-dark border-top" href="#Profil">Profil</a></li>
               <li class="nav-item"><a class="nav-link text-dark border-top" href="#Parcours">Parcours</a></li>
               <li class="nav-item"><a class="nav-link text-dark border-top" href="#Projets">Projets</a></li>
-              <li class="nav-item"><a class="nav-link text-dark border-top" href="#Veille">Veille</a></li>
+              
               <li class="nav-item"><a class="nav-link text-dark border-top border-bottom" href="#Contact">Contact</a></li>
           </ul>
       </div>
@@ -362,7 +365,7 @@
                         <p class="card-text">Durant ma première année de BTS, nous avons travaillé sur la création d'un résolveur de Sudoku</p>
                         
                          <div class="mt-auto">
-                          <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
+                          <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalProjetSudoku">Voir le projet</button>
                           <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalSudoku">Détails</button>
                           
                         </div>
@@ -370,34 +373,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Modal -->
-                  <div class="modal fade text-dark" id="ModalSudoku" tabindex="-1" aria-labelledby="ModalSudokuLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="ModalSudokuLabel">Résolveur de Sudoku en C#</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h3>Contexte</h3>
-                          <p>Dans le cadre de nos cours en C# de début de première année en BTS SIO, nous avons été amenés a réalisé ce résolveur de sudoku. Cet exercice était individuel et nous a permis une première approche sur les tableaux à 3 dimensions.</p>
-                          <h3>Besoin</h3>
-                          <p>La réalisation nous a demandé de s’informer sur ce qu’étais un tableau tridimensionnel et puis comment s’en servit pour mener à bien ce projet. Ensuite, nous avons dû nous interroger sur la logique de programmation a adopter pour que le résolveur fonctionne.</p>
-                          <h3>Environnement</h3>
-                          <p>Pour ce projet, nous nous sommes aidés de l’éditeur de texte Visual Studio Entreprise et avons utilisé le langage de programmation C#. Pour l’affichage, nous avons simplement utilisé l’outil d’affichage inclus dans Visual Studio Entreprise.</p>
-                          <h3>Réalisation</h3>
-                          <p>C’est personnellement grâce à des documentations C# et à différents types d’aides trouvés sur Internet que j’ai pu mener à bien ce projet. Pour la compréhension de la logique à adopté, mon professeur tout comme des tutos YouTube m’ont été utiles</p>
-                          <h3>Bilan</h3>
-                          <p>Ce résolveur de Sudoku a pour but de devoir entrer un sudoku incomplet dans le programme afin de le faire compléter par ce dernier le plus rapidement possible. Le problème de ce programme est que c’est assez long de devoir remplir chacune des 81 cases qui complète un sudoku.
-                          </p>
-                          <h3>Compétences</h3>
-                          <p>Durant ce projet de résolveur de sudoku, j’ai développé différentes compétences. La principale est bien évidemment l’utilisation d’un tableau a 3 dimensions en C#. Mais aussi le fait de devoir me débrouiller par moi même pour chercher des documentations ou d’autres informations pouvant m’aider à réaliser mon projet.
-                          </p>
-                        </div>
-                       
-                      </div>
-                    </div>
-                  </div>
+                
+                 
                 
                   
                   <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
@@ -415,33 +392,7 @@
                       </div>
                     </div>
                   </div>
-                    <!-- Modal -->
-                  <div class="modal fade text-dark" id="ModalMétéo" tabindex="-1" aria-labelledby="ModalMétéoLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="ModalMétéoLabel">Application Météo en NextJS</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h3>Contexte</h3>
-                          <p>Pour mon stage de fin de ma première année de BTS SIO , mon employeur m’a demandé de me former et de créer différents projets pour m’adapter aux outils que j’utiliserai. J’ai donc crée 3 projets, dont celui-ci qui est une application de Météo.</p>
-                          <h3>Besoin</h3>
-                          <p>Pour réaliser ce projet, j’ai dû regarder plusieurs tutos YouTube pour créer une structure de projets a l’aide de NodeJS. Ensuite, spécifiquement, pour ce projet, je me suis renseigné sur l’utilisation de l’API openweather pour avoir accès aux différentes données météorologiques en temps réel.</p>
-                          <h3>Environnement</h3>
-                          <p>Afin de créer cette application de météo, j’ai premièrement installé NodeJS sur ma machine. Puis j’ai utilisé sur l’éditeur de texte Visual Studio Code le terminal pour installer les différents outils liés à NodeJS pour créer la structure de mon projet. J’ai aussi intégré une API me donnant l’accès aux données météorologique en temps réel.</p>
-                          <h3>Réalisation</h3>
-                          <p>Une fois la structure de mon projet réalisé grâce a NodeJS, j’ai récupéré l’API sur le site d’open weather. J’ai dû la connecter sur ma page grâce au lien et à la clé fournie par le site. Ensuite, j’ai pu manipuler les données que je souhaitais pour mener à bien mon projet. Pour le front de la page, j’ai utilisé le framworks Bootstrap.</p>
-                          <h3>Bilan</h3>
-                          <p>Cette application de météo permet donc de rentrer n’importes quelles villes du monde dans une barre de recherche. Une fois la ville rentrée, on accède à là l’heure locale de la ville, sa température, à son taux d'humidité, à la vitesse du vent en km/h et au ressenti réel. </p>
-                          <h3>Compétences</h3>
-                          <p>Grace a ce projet, j’ai amélioré ma compréhension de la structure d’un projet NextJS, mais aussi la compréhension de l’utilisation d’une API dans un fichier NextJS. En effet, j’ai appris à manipuler ces données grâce a des fonctions principalement.</p>
-                        </div>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  
+                   
 
                 <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
                   <div class="card" >
@@ -456,32 +407,7 @@
                       </div>
                     </div>
                 </div>
-                  <!-- Modal -->
-                  <div class="modal fade text-dark" id="ModalPHP" tabindex="-1" aria-labelledby="ModalPHPLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="ModalPHPLabel">Application de gestion en PHP</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h3>Contexte</h3>
-                          <p>Durant mes cours de programmation au cours de ma première année de BTS SIO, nous avons abordé le thème de la connexion d’une base de données avec php. Cette application de gestion d’employé a donc été un très bon apprentissage pour réaliser cet objectif.</p>
-                          <h3>Besoin</h3>
-                          <p>Pour réalisé ce projet de gestion, nous avons eu besoin de nous familiariser avec le langage de programmation PHP et notamment comment le connecter à une base de données. Après cette étape, il a fallu comprendre comment envoyer des requêtes SQL à la base de données.</p>
-                          <h3>Environnement</h3>
-                          <p>En utilisant le langage de programmation PHP sur Visual Studio Code ainsi qu’un serveur WAMP. Ce dernier a permis de lancer le projet PHP en local, mais aussi d’avoir accès à une base de données sur PHP my Admin.</p>
-                          <h3>Réalisation</h3>
-                          <p>Une fois le serveur WAMP en route, il a fallu créer la base de données puis leurs tables avec leurs différents champs la composant. Une fois fait, il a fallu connecter notre fichier PHP avec la base de données puis créer les différents fichiers faisant des requête SQL d’ajout, de suppression, d’affichage ou même de modification. Pour le front de la page, j’ai utilisé le framworks Bootstrap.</p>
-                          <h3>Bilan</h3>
-                          <p>Dans ce projet de gestion d’employé, on retrouve dans le menu principal avec les options suivantes : … Ces différentes pages permettent donc de gérer les différents employés d’une entreprise et de manipuler leurs données virtuelles.</p>
-                          <h3>Compétences</h3>
-                          <p>Grace a cette application, je me suis familiarisé avec l’utilisation de PHP, mais surtout avec la connexion et l’interaction entre PHP et une base de données. De plus, j’ai pu réellement utiliser un serveur WAMP (que je n’avais vu qu’en théorie).</p>
-                        </div>
-                       
-                      </div>
-                    </div>
-                  </div>
+                 
 
                   <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center " id="newProjet"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  >
                     <div class="card" >
@@ -496,35 +422,8 @@
                       </div>
                     </div>
                   </div>
-                    <!-- Modal -->
-                  <div class="modal fade text-dark" id="ModalTodo" tabindex="-1" aria-labelledby="ModalTodoLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="ModalTodoLabel">To Do List en NextJS</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h3>Contexte</h3>
-                          <p>Pour mon stage de fin de ma première année de BTS SIO, mon employeur m’a demandé de me former et de créer différents projets pour m’adapter aux outils que j’utiliserai. J’ai donc crée 3 projets, dont celui-ci qui est une application de To Do List.</p>
-                          <h3>Besoin</h3>
-                          <p>Ce projet a été mon premier projet en NextJS, j’ai donc passé beaucoup de temps a créer la structure de mon projet en trouvant les lignes de commande dont j’avais besoin. Ensuite, j’ai dû me renseigné sur le fonctionnement de ce framworks sur des tutos YouTube.</p>
-                          <h3>Environnement</h3>
-                          <p>Afin de créer cette application de to do list, j’ai premièrement installé NodeJS sur ma machine. Puis j’ai utilisé sur l’éditeur de texte Visual Studio Code le terminal pour installer les différents outils liés à NodeJS pour créer la structure de mon projet. 
-                          </p>
-                          <h3>Réalisation</h3>
-                          <p>Pour ce projet, j’ai utilisé Chat GPT pour trouver l’idée de ce projet simple, puis j’ai suivi un tuto YouTube pour comprendre les bases du fonctionnement de NextJS et la logique de la To Do List. Pour finir, j’ai utilisé Bootstrap pour le front de la page et Chat GPT pour améliorer quelques détails.</p>
-                          <h3>Bilan</h3>
-                          <p>Sur cette application, on retrouve donc une barre de recherche pour nous permettre d’entrer notre tache. Une fois rentré, on peut cocher la tache pour indiquer qu’elle est faite. En dessous des taches, on retrouve un compteur avec les taches à faire (non coché) et un autre avec celle faites (coché).</p>
-                          <h3>Compétences</h3>
-                          <p>Créer ce projet m’a donc permis de me former au framwoks NextJS et la logique de la To Do List. J’ai aussi passé beaucoup de temps à comprendre comment fonctionnait NodeJS pour créer le projet.</p>
-                        </div>
-                       
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class=" col-12 col-md-6  col-xxl-3  mt-3 d-flex justify-content-center   d-none  "    data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   >
+                
+                  <!-- <div class=" col-12 col-md-6  col-xxl-3  mt-3 d-flex justify-content-center   d-none  "    data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   >
                     <div class="card  " >
                       <img src="./photo/nextJs.png" class="card-img-top" alt="...">
                       <div class="d-flex flex-column card-body ">
@@ -537,9 +436,9 @@
                       </div>
                     </div>
                   </div>
-                    <!-- Modal -->
+                    
                   <div class="modal fade text-dark" id="ModalQuiz" tabindex="-1" aria-labelledby="ModalQuizLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-dialog-scrollable">
+                    <div class="modal-dialog  modal-dialog-scrollable modal-lg">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h1 class="modal-title fs-5" id="ModalQuizLabel">Quiz en NextJs</h1>
@@ -564,7 +463,7 @@
                        
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
                  
 
@@ -583,7 +482,7 @@
                   </div> -->
                     <!-- Modal -->
                   <!-- <div class="modal fade text-dark" id="ModalSudoku" tabindex="-1" aria-labelledby="ModalSudokuLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-dialog-scrollable">
+                    <div class="modal-dialog  modal-dialog-scrollable modal-lg">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h1 class="modal-title fs-5" id="ModalSudokuLabel">Résolveur de Sudoku </h1>
@@ -603,39 +502,13 @@
                         <h5 class="card-title">GLPI</h5>
                         <p class="card-text">J'ai appris durant mes cours à gérer un parc informatique a l'aide de ce logiciel de gestion de parc</p>
                        <div class="mt-auto">
-                          <a href="#" target="_blank" class="btn btn-primary mt-1">Voir le projet</a>
+                        <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalGLPIProjet">Voir le projet</button>
                           <button  class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalGLPI">Détails</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                    <!-- Modal -->
-                  <div class="modal fade text-dark" id="ModalGLPI" tabindex="-1" aria-labelledby="ModalGLPILabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="ModalGLPILabel">GLPI</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h3>Contexte</h3>
-                         <p>GLPI est un outil gratuit permettant de gérer le parc informatique d’une entreprise ou de toutes autres établissement. Durant ma première année de BTS SIO, nous avons pu apprendre a utilisé cet outil pour gérer le parc informatique de notre établissement.</p>
-                        <h3>Besoin</h3>
-                        <p>Tout d’abord, nous avons eu besoin de créer une machine virtuelle vierge sous Debian (Linux) pour réaliser notre projet dessus. Ensuite, nous avons dû configurer GLPI sur le réseau de notre établissement afin qu’il accède à son parc informatique. </p>
-                        <h3>Environnement</h3>
-                        <p>Pour que le projet soit mené à bien, nous avons créé une machine virtuelle pour qu’aucun élément extérieur n’affecte notre projet. Cette machine virtuelle a permis de parfaitement configurer GLPI sur le parc informatique de notre établissement.</p>
-                        <H3>Réalisation</H3>
-                        <p>Pour créer la machine virtuelle, nous avons pu la créer sur la ferme de serveur de notre lycée. Ensuite, grâce au terminal Debian, nous avons pu configurer GLPI pour qu’il accède a notre parc informatique, ce qui nous a permis d'effectuer différentes actions sur le ce dernier.
-                        </p>
-                        <h3>Bilan</h3>
-                        <p>Ce projet nous a permis de pouvoir accéder au parc informatique de notre établissement et de pouvoir ainsi interagir avec ce dernier. En effet, nous avons pu supprimer des logiciels de différentes machines, ou encore d’observer les machines externes connectées a notre machine.</p>
-                        <h3>Compétences</h3>
-                        <p>En réalisant cette activité, nous avons pu nous initier à la gestion du parc informatique d’une entreprise. Cette compétence nous sera utile dans le monde professionnel.</p>
-                        </div>
-                       
-                      </div>
-                    </div>
-                  </div>
+                    
 
                   <!-- <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center d-none "  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
                     <div class="card" >
@@ -671,7 +544,7 @@
                         <h5 class="card-title">Les fondamentaux du C#</h5>
                         <p class="card-text">J'ai suivi cette formation d'initiation au C# sur codelearn.io</p>
                        <div class="mt-auto">
-                          <a href="../portfolio/certifications/c_sharp.pdf" target="_blank" class="btn btn-primary mt-1">Certification</a>
+                        <button class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalCS">Certification</button>
                         </div>
                       </div>
                     </div>
@@ -686,8 +559,8 @@
                       <h5 class="card-title">Bootstrap</h5>
                       <p class="card-text">C'est via OpenClassRoom que j'ai découvert le framework Bootstrap en réalisant un portfolio fictif</p>
                       <div class="mt-auto  ">
-                        <a href="../portfolio/certifications/bootstrap.pdf" target="_blank" class="btn btn-primary mt-1">Certification</a>
-                        <a href="../portfolio/projets/portfolio.html" target="_blank" class="btn btn-primary mt-1">Portfolio</a>
+                        <button class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalBootstrap">Certification</button>
+                        <a href="./projets/portfolio.html" target="_blank" class="btn btn-primary mt-1">Portfolio</a>
                       </div>
                       
                       
@@ -712,12 +585,13 @@
                         <h5 class="card-title">Tailwind Css</h5>
                         <p class="card-text">Grâce à Udemy, j'ai pu comprendre le fonctionnement de ce framework en réalisant un site vitrine Tesla</p>
                          <div class="mt-auto">
-                          <a href="#" class="btn btn-primary mt-1">Certification</a>
-                          <a href="#" target="_blank" class="btn btn-primary mt-1">Portfolio</a>
+                          <button class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalTailwind">Certification</button>
+                          <a href="https://swannvrg.github.io/tesla/public/" target="_blank" class="btn btn-primary mt-1">Portfolio</a>
                         </div>
                       </div>
                     </div>
                 </div> 
+                
 
                 <div class="col-12 col-md-6  col-xxl-3  mt-3 d-flex justify-content-center d-none " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                   <div class="card" >
@@ -726,7 +600,7 @@
                       <h5 class="card-title">Les fondamentaux du Java</h5>
                       <p class="card-text">Je me suis rapidement intéressé au Java en suivant cette formation sur codelearn.io</p>
                       <div class="mt-auto">
-                        <a href="../portfolio/certifications/java.pdf" target="_blank" class="btn btn-primary mt-1">Certification</a>
+                        <button class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#ModalJava">Certification</button>
                       </div>
                     </div>
                   </div>
@@ -752,7 +626,242 @@
             </div>
             <div class="col-0 col-lg-2 col-xxl-3 "></div>
             </div>
+            <!-- Début des modal associé aux cards en dehors des div car sinon ct bordel -->
+            <!-- Modal Sudoku -->
+                 <!-- Modal Projet Sudoku -->
+                 <div class="modal fade text-dark" id="ModalProjetSudoku" tabindex="-1" aria-labelledby="ModalProjetSudokuLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalProjetSudokuLabel">Résolveur de Sudoku en C#</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body d-flex justify-content-center align-items-center">
+                        <div>
+                          <img src="./projets/sudoku.PNG" alt="" class="img-fluid">
+                          <p>Ci-deesus, on retrouve le résultat qu'on obtient du programme apès avoir rentré les données du sudoku incomplet.</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <!-- Modal Sudoku -->
+            <div class="modal fade text-dark" id="ModalSudoku" tabindex="-1" aria-labelledby="ModalSudokuLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-dialog-scrollable modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalSudokuLabel">Résolveur de Sudoku en C#</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Contexte</h3>
+                    <p>Dans le cadre de nos cours en C# de début de première année en BTS SIO, nous avons été amenés a réalisé ce résolveur de sudoku. Cet exercice était individuel et nous a permis une première approche sur les tableaux à 3 dimensions.</p>
+                    <h3>Besoin</h3>
+                    <p>La réalisation nous a demandé de s’informer sur ce qu’étais un tableau tridimensionnel et puis comment s’en servit pour mener à bien ce projet. Ensuite, nous avons dû nous interroger sur la logique de programmation a adopter pour que le résolveur fonctionne.</p>
+                    <h3>Environnement</h3>
+                    <p>Pour ce projet, nous nous sommes aidés de l’éditeur de texte Visual Studio Entreprise et avons utilisé le langage de programmation C#. Pour l’affichage, nous avons simplement utilisé l’outil d’affichage inclus dans Visual Studio Entreprise.</p>
+                    <h3>Réalisation</h3>
+                    <p>C’est personnellement grâce à des documentations C# et à différents types d’aides trouvés sur Internet que j’ai pu mener à bien ce projet. Pour la compréhension de la logique à adopté, mon professeur tout comme des tutos YouTube m’ont été utiles</p>
+                    <h3>Bilan</h3>
+                    <p>Ce résolveur de Sudoku a pour but de devoir entrer un sudoku incomplet dans le programme afin de le faire compléter par ce dernier le plus rapidement possible. Le problème de ce programme est que c’est assez long de devoir remplir chacune des 81 cases qui complète un sudoku.
+                    </p>
+                    <h3>Compétences</h3>
+                    <p>Durant ce projet de résolveur de sudoku, j’ai développé différentes compétences. La principale est bien évidemment l’utilisation d’un tableau a 3 dimensions en C#. Mais aussi le fait de devoir me débrouiller par moi même pour chercher des documentations ou d’autres informations pouvant m’aider à réaliser mon projet.
+                    </p>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+                    <!-- Modal Météo -->
+                  <div class="modal fade text-dark" id="ModalMétéo" tabindex="-1" aria-labelledby="ModalMétéoLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalMétéoLabel">Application Météo en NextJS</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Pour mon stage de fin de ma première année de BTS SIO , mon employeur m’a demandé de me former et de créer différents projets pour m’adapter aux outils que j’utiliserai. J’ai donc crée 3 projets, dont celui-ci qui est une application de Météo.</p>
+                          <h3>Besoin</h3>
+                          <p>Pour réaliser ce projet, j’ai dû regarder plusieurs tutos YouTube pour créer une structure de projets a l’aide de NodeJS. Ensuite, spécifiquement, pour ce projet, je me suis renseigné sur l’utilisation de l’API openweather pour avoir accès aux différentes données météorologiques en temps réel.</p>
+                          <h3>Environnement</h3>
+                          <p>Afin de créer cette application de météo, j’ai premièrement installé NodeJS sur ma machine. Puis j’ai utilisé sur l’éditeur de texte Visual Studio Code le terminal pour installer les différents outils liés à NodeJS pour créer la structure de mon projet. J’ai aussi intégré une API me donnant l’accès aux données météorologique en temps réel.</p>
+                          <h3>Réalisation</h3>
+                          <p>Une fois la structure de mon projet réalisé grâce a NodeJS, j’ai récupéré l’API sur le site d’open weather. J’ai dû la connecter sur ma page grâce au lien et à la clé fournie par le site. Ensuite, j’ai pu manipuler les données que je souhaitais pour mener à bien mon projet. Pour le front de la page, j’ai utilisé le framworks Bootstrap.</p>
+                          <h3>Bilan</h3>
+                          <p>Cette application de météo permet donc de rentrer n’importes quelles villes du monde dans une barre de recherche. Une fois la ville rentrée, on accède à là l’heure locale de la ville, sa température, à son taux d'humidité, à la vitesse du vent en km/h et au ressenti réel. </p>
+                          <h3>Compétences</h3>
+                          <p>Grace a ce projet, j’ai amélioré ma compréhension de la structure d’un projet NextJS, mais aussi la compréhension de l’utilisation d’une API dans un fichier NextJS. En effet, j’ai appris à manipuler ces données grâce a des fonctions principalement.</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Gestion  -->
+                  <div class="modal fade text-dark" id="ModalPHP" tabindex="-1" aria-labelledby="ModalPHPLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalPHPLabel">Application de gestion en PHP</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Durant mes cours de programmation au cours de ma première année de BTS SIO, nous avons abordé le thème de la connexion d’une base de données avec php. Cette application de gestion d’employé a donc été un très bon apprentissage pour réaliser cet objectif.</p>
+                          <h3>Besoin</h3>
+                          <p>Pour réalisé ce projet de gestion, nous avons eu besoin de nous familiariser avec le langage de programmation PHP et notamment comment le connecter à une base de données. Après cette étape, il a fallu comprendre comment envoyer des requêtes SQL à la base de données.</p>
+                          <h3>Environnement</h3>
+                          <p>En utilisant le langage de programmation PHP sur Visual Studio Code ainsi qu’un serveur WAMP. Ce dernier a permis de lancer le projet PHP en local, mais aussi d’avoir accès à une base de données sur PHP my Admin.</p>
+                          <h3>Réalisation</h3>
+                          <p>Une fois le serveur WAMP en route, il a fallu créer la base de données puis leurs tables avec leurs différents champs la composant. Une fois fait, il a fallu connecter notre fichier PHP avec la base de données puis créer les différents fichiers faisant des requête SQL d’ajout, de suppression, d’affichage ou même de modification. Pour le front de la page, j’ai utilisé le framworks Bootstrap.</p>
+                          <h3>Bilan</h3>
+                          <p>Dans ce projet de gestion d’employé, on retrouve dans le menu principal avec les options suivantes : … Ces différentes pages permettent donc de gérer les différents employés d’une entreprise et de manipuler leurs données virtuelles.</p>
+                          <h3>Compétences</h3>
+                          <p>Grace a cette application, je me suis familiarisé avec l’utilisation de PHP, mais surtout avec la connexion et l’interaction entre PHP et une base de données. De plus, j’ai pu réellement utiliser un serveur WAMP (que je n’avais vu qu’en théorie).</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                    <!-- Modal To do-->
+                  <div class="modal fade text-dark" id="ModalTodo" tabindex="-1" aria-labelledby="ModalTodoLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalTodoLabel">To Do List en NextJS</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                          <p>Pour mon stage de fin de ma première année de BTS SIO, mon employeur m’a demandé de me former et de créer différents projets pour m’adapter aux outils que j’utiliserai. J’ai donc crée 3 projets, dont celui-ci qui est une application de To Do List.</p>
+                          <h3>Besoin</h3>
+                          <p>Ce projet a été mon premier projet en NextJS, j’ai donc passé beaucoup de temps a créer la structure de mon projet en trouvant les lignes de commande dont j’avais besoin. Ensuite, j’ai dû me renseigné sur le fonctionnement de ce framworks sur des tutos YouTube.</p>
+                          <h3>Environnement</h3>
+                          <p>Afin de créer cette application de to do list, j’ai premièrement installé NodeJS sur ma machine. Puis j’ai utilisé sur l’éditeur de texte Visual Studio Code le terminal pour installer les différents outils liés à NodeJS pour créer la structure de mon projet. 
+                          </p>
+                          <h3>Réalisation</h3>
+                          <p>Pour ce projet, j’ai utilisé Chat GPT pour trouver l’idée de ce projet simple, puis j’ai suivi un tuto YouTube pour comprendre les bases du fonctionnement de NextJS et la logique de la To Do List. Pour finir, j’ai utilisé Bootstrap pour le front de la page et Chat GPT pour améliorer quelques détails.</p>
+                          <h3>Bilan</h3>
+                          <p>Sur cette application, on retrouve donc une barre de recherche pour nous permettre d’entrer notre tache. Une fois rentré, on peut cocher la tache pour indiquer qu’elle est faite. En dessous des taches, on retrouve un compteur avec les taches à faire (non coché) et un autre avec celle faites (coché).</p>
+                          <h3>Compétences</h3>
+                          <p>Créer ce projet m’a donc permis de me former au framwoks NextJS et la logique de la To Do List. J’ai aussi passé beaucoup de temps à comprendre comment fonctionnait NodeJS pour créer le projet.</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+
+                    <!-- Modal GLPI -->
+                  <div class="modal fade text-dark" id="ModalGLPI" tabindex="-1" aria-labelledby="ModalGLPILabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-scrollable modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="ModalGLPILabel">GLPI</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Contexte</h3>
+                         <p>GLPI est un outil gratuit permettant de gérer le parc informatique d’une entreprise ou de toutes autres établissement. Durant ma première année de BTS SIO, nous avons pu apprendre a utilisé cet outil pour gérer le parc informatique de notre établissement.</p>
+                        <h3>Besoin</h3>
+                        <p>Tout d’abord, nous avons eu besoin de créer une machine virtuelle vierge sous Debian (Linux) pour réaliser notre projet dessus. Ensuite, nous avons du installer Fusion Inventory puis le configurer avec GLPI pour accéder aux détails de notre machine. </p>
+                        <h3>Environnement</h3>
+                        <p>Pour que le projet soit mené à bien, nous avons créé une machine virtuelle pour qu’aucun élément extérieur n’affecte notre projet. Cette machine virtuelle à permis de parfaitement configurer GLPI et Fusion Inventory sur le parc informatique de notre machine.</p>
+                        <H3>Réalisation</H3>
+                        <p>Pour créer la machine virtuelle, nous avons pu la créer sur la ferme de serveur de notre lycée. Ensuite, grâce au terminal Debian, nous avons pu configurer GLPI pour qu’il accède a notre parc informatique, puis nous avons installer Fusion Inventory. Nous avons donc par la suite configuré ce programme sur GLPI ce qui nous a permis d'effectuer différentes actions sur le notre machine.
+                        </p>
+                        <h3>Bilan</h3>
+                        <p>Ce projet nous a permis de pouvoir accéder au parc informatique de notre machine et de pouvoir ainsi interagir avec cette dernière. En effet, nous avons pu supprimer des logiciels de différentes machines. Il est aussi possible avec GLPI d'avoir accès au parc informatique de toutes les machines du réseau. Cependant, nous l'avons seulement vu en théorie.</p>
+                        <h3>Compétences</h3>
+                        <p>En réalisant cette activité, nous avons pu nous initier à la gestion du parc informatique d’une entreprise. Compétence qui nous sera utile dans le monde professionnel en nous permettant d'ouvrir notre champs de connaissance et de nous rendre plus fonctionnel.</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+
+              <!-- Modal GLPI Projet-->
+             <div class="modal fade text-dark" id="ModalGLPIProjet" tabindex="-1" aria-labelledby="ModalGLPIProjetLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalGLPIProjetLabel">Résolveur de Sudoku en C#</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body d-flex justify-content-center align-items-center">
+                        <div>
+                          <img src="./projets/glpi.png" alt="" class="img-fluid"><br>
+                          <p>Voici l'interface à laquelle nous avons accès grâce à GLPI. On y retrouve tout les paramètres internes et externe de notre machine.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             
+             <!-- Modal Tailwind-->
+             <div class="modal fade text-dark" id="ModalTailwind" tabindex="-1" aria-labelledby="ModalTailwindLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalTailwindLabel">Certification TailwindCSS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="./certifications/tailwind.PNG" class="p-2" style="max-width: 100%; max-height: 100%; object-fit: contain;" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- Modal C#-->
+             <div class="modal fade text-dark" id="ModalCS" tabindex="-1" aria-labelledby="ModalCSLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalCSLabel">Certification TailwindCSS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="./certifications/c_sharp.png" class="p-2" style="max-width: 100%; max-height: 100%; object-fit: contain;" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- Modal Bootstrap-->
+             <div class="modal fade text-dark" id="ModalBootstrap" tabindex="-1" aria-labelledby="ModalBootstrapLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalBootstrapLabel">Certification TailwindCSS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="./certifications/bootstrap.png" class="p-2" style="max-width: 100%; max-height: 100%; object-fit: contain;" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- Modal Java-->
+             <div class="modal fade text-dark" id="ModalJava" tabindex="-1" aria-labelledby="ModalJavaLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalJavaLabel">Certification TailwindCSS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="./certifications/java.png" class="p-2" style="max-width: 100%; max-height: 100%; object-fit: contain;" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="text-end pt-4">
               <button id="voirPlusBtn" class="btn btn-primary">Voir plus</button>
             </div>
@@ -817,7 +926,7 @@
                 <li class="list-item text-secondary "  data-bs-toggle="modal" data-bs-target="#ModalCGU" style="text-decoration: none; cursor: pointer; list-style: none;" >Conditions Générales d'utilisation</li>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCGU" tabindex="-1" aria-labelledby="ModalCGULabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg  ">
                     <div class="modal-content">
                       <div class="modal-header text-dark">
                         <h1 class="modal-title fs-5" id="ModalCGULabel">Conditions Générales d'Utilisation</h1>

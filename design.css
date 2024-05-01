@@ -308,7 +308,7 @@ h1{
 
 
 .card{
-  height: 20rem;
+  height: 21rem;
   width: 20rem;
 }
 /* responsive CARDS */
@@ -316,7 +316,7 @@ h1{
 
   .card{
     height: 20rem;
-    width: 17rem;
+    width: 18rem;
   }
 
 
@@ -324,8 +324,8 @@ h1{
 @media screen and (max-width: 2000px) {
 
   .card{
-    height: 20rem;
-    width: 15rem;
+    height: 23rem;
+    width: 16rem;
   }
 
 
@@ -333,8 +333,8 @@ h1{
 @media screen and (max-width: 1730px) {
 
   .card{
-    height: 23rem;
-    width: 12rem;
+    height: 24rem;
+    width: 14rem;
   }
   
   

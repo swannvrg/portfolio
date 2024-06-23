@@ -287,6 +287,15 @@ h1{
 }
 
 /* Cards */
+.hidden{
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .center-on-small {
+    justify-content: center !important;
+  }
+}
 /* annimation cards */
 .fade-in {
   animation: fadeInFromBottom ease 1s;

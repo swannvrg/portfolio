@@ -49,13 +49,14 @@
               <li class="nav-item col"><a class="nav-link" href="#Profil">Profil</a></li>
               <li class="nav-item col"><a class="nav-link" href="#Parcours">Parcours</a></li>
               <li class="nav-item col"><a class="nav-link" href="#Projets">Projets</a></li>
+              <li class="nav-item col"><a class="nav-link" href="#Veille">Veille</a></li>
               <li class="nav-item col"><a class="nav-link" href="#Contact">Contact</a></li>
           </ul>
           
         
         
       </div>
-      
+    
       <!-- côté invisible pour le style de la navbar -->
   </nav>
   
@@ -71,13 +72,36 @@
               <li class="nav-item"><a class="nav-link text-dark border-top" href="#Profil">Profil</a></li>
               <li class="nav-item"><a class="nav-link text-dark border-top" href="#Parcours">Parcours</a></li>
               <li class="nav-item"><a class="nav-link text-dark border-top" href="#Projets">Projets</a></li>
-              
+              <li class="nav-item"><a class="nav-link text-dark border-top border-bottom" href="#Veille">Veille</a></li>
               <li class="nav-item"><a class="nav-link text-dark border-top border-bottom" href="#Contact">Contact</a></li>
           </ul>
       </div>
       
       
   </div>
+  <!-- Flèche responsive qui ouvre la barre -->
+<div id="toggleBar" class="d-xl-none position-fixed top-50 bg-light d-flex align-items-center justify-content-center rounded-top-end rounded-bottom-end border"
+style="width: 20px; height: 50px; border-top-right-radius: 50%; border-bottom-right-radius: 50%; cursor: pointer;">
+<p class="text-dark m-0 fw-bold">></p>
+</div>
+
+<!-- Barre de liens sociaux verticale -->
+<div id="socialBar" class="d-none d-xl-flex position-fixed top-50 start-0 translate-middle-y bg-light m-4 m-xl-2 p-2 rounded shadow flex-column align-items-center z-1">
+<a href="https://linkedin.com/in/swann-basté-vergez-2a5369278" class="text-primary text-decoration-none" data-bs-toggle="tooltip" title="LinkedIn">
+   <i class="bi bi-linkedin fs-3"></i>
+</a>
+<a href="https://github.com/swannvrg" class="text-primary text-decoration-none" data-bs-toggle="tooltip" title="GitHub">
+   <i class="bi bi-github fs-3"></i>
+</a>
+<a href="mailto:swannvrg@gmail.com" class="text-primary text-decoration-none" data-bs-toggle="tooltip" title="Mail">
+   <i class="bi bi-envelope-at fs-3"></i>
+</a>
+</div>
+
+ 
+
+
+    
   </header>
  
 
@@ -85,6 +109,8 @@
       <section id="Accueil" >
         <!-- Accueil -->
         <div class="full-height row ">
+          
+          
           <div class="col-12"></div>
           <div class="d-flex justify-content-center col-12">
           <div class="text-center ">
@@ -108,7 +134,7 @@
             <div class="" >
                 <div class="row align-items-center gy-5">
                     <h2 class="mt-3 mb-5 fw-bold titre">Mon Profil</h2>
-                    <div class="fs-3 offset-lg-1 col-12 col-lg-7">
+                    <div class="fs-3 offset-lg- col-12 col-lg-7">
                          <p>Étudiant en informatique spécialisée dans le développement, ce portfolio retrace à travers diverses catégories mes compétences ainsi que mon parcours professionnel et scolaire.</p>
 
                     </div>
@@ -127,161 +153,98 @@
                 <!-- Progress Bar -->
                 <div class="col-12 col-lg-8 d-flex justify-content-center ">
                 <div class="row align-items-center gy-5 mt-4  container   ">
-                    <div class="col text-dark bg-secondary-subtle p-3 rounded" >
-                        <!--1 HTML CSS -->
-                        <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <i class="fa-brands fa-html5 fs-3 me-3"></i>
-                                  <p class="fw-bold m-0">HTML / CSS</p>
-                                  
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="75%">
-                                <div class="progress">
-                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        <!-- 2 PHP-->
-                          <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <i class="fa-brands fa-php fs-3 me-3"></i>
-                                  <p class="fw-bold m-0">PHP</p>
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="50%">
-                                <div class="progress">
-                                  <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- 3 -->
-                          <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <img src="./icon/nextjs.svg" class="fs-3 me-3" alt="Bootstrap" width="32" height="32">
-                                  <p class="fw-bold m-0">Next Js</p>
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="50%">
-                                <div class="progress">
-                                  <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- 4 -->
-                          <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <i class="fa-brands fa-bootstrap fs-3 me-2"></i>
-                                  <p class="fw-bold m-0 fs">Bootstrap</p>
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="75%">
-                                <div class="progress">
-                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- 5 -->
-                          <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <img src="./icon/c.svg" class="fs-3 me-3 text-dark" alt="Bootstrap" width="32" height="32">
-                                  <p class="fw-bold m-0 ">C#</p>
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="25%">
-                                <div class="progress">
-                                  <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                           <!-- 6 -->
-                           <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <img src="./icon/serveur-sql.svg" class="fs-2 me-3 text-dark" alt="Bootstrap" width="32" height="32">
-                                  <p class="fw-bold m-0">SQL</p>
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="75%">
-                                <div class="progress">
-                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- 7 -->
-                          <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <img src="./icon/tailwind-css.svg" class="fs-2 me-3 text-dark" alt="Bootstrap" width="32" height="32">
-                                  <p class="fw-bold m-0">Tailwind CSS</p>
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="75%">
-                                <div class="progress">
-                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- 8 -->
-                          <div class="mb-3 p-3 bg-white rounded">
-                            <div class="row align-items-center">
-                              <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
-                                <div class="d-flex align-items-center">
-                                  <!-- ajouter icons -->
-                                  <img src="./icon/Git-icon-black.svg.png" class="fs-2 me-3 text-dark" alt="Bootstrap" width="32" height="32">
-                                  <p class="fw-bold m-0">Git</p>
-                                </div>
-                              </div>
-                              <div class="col" data-bs-toggle="tooltip" title="75%">
-                                <div class="progress">
-                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                       aria-valuemax="100" >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                    <!-- From Uiverse.io by gharsh11032000 --> 
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg width="800px" height="800px" viewBox="-1 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+                          <title>html [#124]</title>
+                          <desc>Created with Sketch.</desc>
+                          <defs>
+                      
+                      </defs>
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Dribbble-Light-Preview" transform="translate(-61.000000, -7639.000000)" fill="#000000">
+                                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                                      <path d="M19.4350881,7485 L19.4279481,7485 L10.8119794,7485 L11.0180201,7487 L19.2300674,7487 C19.109707,7488.752 18.7455658,7492.464 18.6119454,7494.153 L13.99949,7495.451 L13.99949,7495.455 L13.98929,7495.46 L9.37377458,7493.836 L9.05757353,7490 L11.3199411,7490 L11.4800816,7492.063 L13.99337,7493 L13.99949,7493 L16.5086984,7492.1 L16.7667592,7489 L8.95659319,7489 C8.91885306,7488.599 8.43333144,7483.392 8.34867116,7483 L19.6370488,7483 C19.5738086,7483.66 19.5095484,7484.338 19.4350881,7485 L19.4350881,7485 Z M5,7479 L6.63812546,7497.148 L13.98929,7499 L21.3598345,7497.111 L23,7479 L5,7479 Z" id="html-[#124]">
+                      
+                      </path>
+                                  </g>
+                              </g>
+                          </g>
+                      </svg>
+                        
+                        <div class="cardC__content">
+                          <p class="cardC__title">HTML/CSS</p>
+                        </div>
+                      </div>
                     </div>
+                    
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>PHP icon</title><path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"/></svg>
+                        <div class="cardC__content">
+                          <p class="cardC__title">PHP</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg viewBox="0 0 24 24"><path fill="#000000" d="M12 2l10 18H2L12 2z"/></svg>
+                        <div class="cardC__content">
+                          <p class="cardC__title">NextJS</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg viewBox="0 0 24 24"><path fill="#563D7C" d="M4 2h16l-1 18-7 2-7-2z"/><path fill="#FFF" d="M12 4l7 14H5z"/></svg>
+                        <div class="cardC__content">
+                          <p class="cardC__title">Bootstrap</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg viewBox="0 0 24 24"><path fill="#239120" d="M12 2l10 18H2L12 2z"/></svg>
+                        <div class="cardC__content">
+                          <p class="cardC__title">C#</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg viewBox="0 0 24 24"><path fill="#F29111" d="M4 2h16v20H4z"/><path fill="#FFF" d="M12 4l6 12H6z"/></svg>
+                        <div class="cardC__content">
+                          <p class="cardC__title">SQL</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg viewBox="0 0 24 24"><path fill="#38BDF8" d="M12 2l10 18H2L12 2z"/></svg>
+                        <div class="cardC__content">
+                          <p class="cardC__title">TailwindCSS</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-center col-xxl">
+                      <div class="cardC">
+                        <svg viewBox="0 0 24 24"><path fill="#F05032" d="M2 2h20v20H2z"/><path fill="#FFF" d="M12 4l6 12H6z"/></svg>
+                        <div class="cardC__content">
+                          <p class="cardC__title">Git</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+
                     
                   </div>
                 </div>
@@ -369,31 +332,42 @@
               
               <div class="mt-5 mx-5">
                 <div class="d-flex justify-content-center">
-                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <!-- boutons avec les choix projets/certifs -->
-                    <input type="radio" class="btn-check" name="btnToggle" id="btnProjet" autocomplete="off" checked>
-                    <label class="btn btn-outline-light" for="btnProjet">Mes Projets</label>
-                    
-                    <input type="radio" class="btn-check" name="btnToggle" id="btnCertif" autocomplete="off">
-                    <label class="btn btn-outline-light" for="btnCertif">Mes Certifications</label>
-                  </div>
-                </div>
-              </div>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <!-- Boutons Projets/Certifications -->
+                        <input type="radio" class="btn-check" name="btnToggle" id="btnProjet" autocomplete="off" checked>
+                        <label class="btn btn-outline-light" for="btnProjet">Mes Projets</label>
             
-             <!-- //Bouton de filtres 
-              <div class="d-flex align-items-center mt-4 center-on-small">
-                <div class="bg-light rounded p-2" id="projectBtnGroup">
-                  <button class="filter-button btn btn-primary mx-1" data-target="all">Tout</button>
-                  <button class="filter-button btn btn-primary mx-1" data-target="nextjs">NextJS</button>
-                  <button class="filter-button btn btn-primary mx-1" data-target="php">PHP</button>
-                  <button class="filter-button btn btn-primary mx-1" data-target="csharp">C#</button>
-                  <button class="filter-button btn btn-primary mx-1" data-target="network">Réseau</button>
+                        <input type="radio" class="btn-check" name="btnToggle" id="btnCertif" autocomplete="off">
+                        <label class="btn btn-outline-light" for="btnCertif">Mes Certifications</label>
+                    </div>
                 </div>
-                
-                
-              </div> -->
-              
-        
+            </div>
+            
+            <!-- Boutons de filtre pour les projets -->
+            <div class="mt-2 mx-5 filters" id="projectBtnGroup">
+
+                <div class="d-flex justify-content-center align-items-center mt-4 center-on-small">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnFilter" id="btnAll" autocomplete="off" checked>
+                        <label class="filter-button btn btn-outline-light" for="btnAll" data-target="all">Tout</label>
+            
+                        <input type="radio" class="btn-check" name="btnFilter" id="btnNextJS" autocomplete="off">
+                        <label class="filter-button btn btn-outline-light" for="btnNextJS" data-target="nextjs">NextJS</label>
+            
+                        <input type="radio" class="btn-check" name="btnFilter" id="btnPHP" autocomplete="off">
+                        <label class="filter-button btn btn-outline-light" for="btnPHP" data-target="php">PHP</label>
+            
+                        <input type="radio" class="btn-check" name="btnFilter" id="btnCsharp" autocomplete="off">
+                        <label class="filter-button btn btn-outline-light" for="btnCsharp" data-target="csharp">C#</label>
+            
+                        <input type="radio" class="btn-check" name="btnFilter" id="btnReseau" autocomplete="off">
+                        <label class="filter-button btn btn-outline-light" for="btnReseau" data-target="network">Réseau</label>
+                    </div>
+                </div>
+            </div>
+            
+          
+            
             
             
               <!-- Cards Projet -->
@@ -450,7 +424,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div>  
                     </div>
               
                     <div class="col-12 col-md-6 col-xxl-3 mt-3 d-flex justify-content-center card-group" id="card-nextjs">
@@ -520,7 +494,7 @@
                       </div>
                     </div>
                     
-                    <div class="col-12 col-md-6 col-xxl-3 mt-3 d-flex justify-content-center card-group d-none" id="card-php">
+                    <div class="col-12 col-md-6 col-xxl-3 mt-3 d-flex justify-content-center card-group d-none" id="card-noCode">
                       <div class="card">
                         <img src="./photo/NoCode.png" class="card-img-top" alt="...">
                         <div class="d-flex flex-column card-body">
@@ -644,23 +618,31 @@
                 <div class="col-12 col-lg-8   ">
                   <div class="row d-flex ">
 
-                  <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  "   data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
-                    <div class="card" >
-                      <img src="./photo/c_sharp.png" class="card-img-top" alt="...">
-                      <div class="d-flex flex-column card-body ">
-                        <h5 class="card-title">Les fondamentaux du C#</h5>
-                        <p class="card-text">J'ai suivi cette formation d'initiation au C# sur codelearn.io</p>
-                       <div class="mt-auto row d-flex justify-content-center">
+                  <!-- <div class="col-12 col-md-6 col-xxl-3 mt-3 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+  <div class="card d-flex flex-column">
+    <img src="./photo/c_sharp.png" class="card-img-top" alt="...">
+    <div class="d-flex flex-column card-body flex-grow-1">
+      <h5 class="card-title">Les fondamentaux du C#</h5>
+      <p class="card-text">J'ai suivi cette formation d'initiation au C# sur codelearn.io</p>
+      <div class="mt-auto row d-flex justify-content-center">
+        <button class="btn btn-primary mt-1 col-8" data-bs-toggle="modal" data-bs-target="#ModalCS">Certification</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+                <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                  <div class="card" >
+                    <img src="./photo/c_sharp.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column ">
+                      <h5 class="card-title">C#</h5>
+                      <p class="card-text">C'est sur le site codelearn.io que j'ai pu me familiariser avec les bases du C# à l'aide des différents cours mis à disposition</p>
+                      <div class="mt-auto row d-flex justify-content-center">
                         <button class="btn btn-primary mt-1 col-8" data-bs-toggle="modal" data-bs-target="#ModalCS">Certification</button>
-                        </div>
                       </div>
                     </div>
                   </div>
-              
-           
-                
-                
-
+                </div>
+      
                 <div class=" col-12   col-md-6  col-xxl-3 mt-3 d-flex justify-content-center  " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                   <div class="card" >
                     <img src="./photo/nextJs.png" class="card-img-top" alt="...">
@@ -752,7 +734,7 @@
             <!-- Début des modal associé aux cards en dehors des div car sinon ct bordel -->
             <!-- Modal Sudoku -->
                  <!-- Modal Projet Sudoku -->
-                 <div class="modal fade text-dark" id="ModalProjetSudoku" tabindex="-1" aria-labelledby="ModalProjetSudokuLabel" aria-hidden="true">
+                 <div class="modal fade text-dark" id="ModalProjetSudoku" tabindex="-1" aria-labelledby="ModalProjetSudokuLabel" aria-hidden="true">    
                   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -959,7 +941,7 @@
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="ModalTailwindLabel">Certification TailwindCSS</h1>
+                    <h1 class="modal-title fs-5" id="ModalTailwindLabel">Certification C#</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body d-flex justify-content-center align-items-center">
@@ -1034,8 +1016,229 @@
               </div>
             </div>
           
-      </section>
-      
+        </section>
+
+
+        <!-- Section Veille techno -->
+      <div id="Veille" class="p-5"></div>
+        <section   class=" py-5">
+          <h2 class="mt-3 pb-5 fw-bold titre">Veille Technologique</h2>
+          <p class="mt-3 pb-5 fs-3 titre d-flex justify-content-center text-center">L'évolution de la création d'intelligences artificielles en France : innovations, enjeux et positionnement sur la scène mondiale</p>
+          <div class="d-flex flex-column align-items-center  justify-content-center ">
+
+              
+            <!-- Card horizontale -->
+            
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center 
+                      ">
+                      <img src="./photo/ia_submit.png" class="img-fluid rounded-2" style="object-fit: cover; max-height: 170px; " alt="ia submit">
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">Plan d'investissement massif dans l'IA</h5>
+                      <p class="card-text">
+                        Suite au sommet pour l’action sur l’IA, le président Emmanuel Macron a annoncé 
+                        un plan d'investissement de 109 milliards dans le secteur de l'IA.
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Février</small></p>
+                      <div>
+                        <a href="https://en.wikipedia.org/wiki/AI_Action_Summit"class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center ">
+                      <img src="./photo/codestral.jpg" class="img-fluid rounded-2" style="object-fit: cover; max-height: 170px;" alt="ia submit" >
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">Amélioration de Codestral par Mistral AI </h5>
+                      <p class="card-text">
+                        Mistral AI a lancé une version améliorée de "Codestral", son modèle dédié à la génération de code informatique, offrant une efficacité et une vitesse accrue. 
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Janvier</small></p>
+                      <div>
+                        <a href="https://en.wikipedia.org/wiki/AI_Action_Summit"class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center ">
+                      <img src="./photo/secuIA.webp" class="img-fluid rounded-2" style="object-fit: cover;max-height: 170px;" alt="ia submit" >
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">Publication du premier rapport international sur la sécurité de l'IA</h5>
+                      <p class="card-text">
+                        Le 29 janvier 2025, le premier rapport international sur la sécurité de l'IA a été publié.
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Janvier</small></p>
+                      <div>
+                        <a href="https://en.wikipedia.org/wiki/AI_Action_Summit"class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center ">
+                      <img src="./photo/oecdIA.webp" class="img-fluid rounded-2" style="object-fit: cover; max-height: 170px;" alt="ia submit" >
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">Conférence internationale sur l'IA dans le travail</h5>
+                      <p class="card-text">
+                        Organisée à Paris par l'OCDE, cette conférence a rassemblé des experts pour discuter de l'impact de l'IA sur l'emploi.
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Décembre</small></p>
+                      <div>
+                        <a href="https://www.oecd.org/fr/about/news/media-advisories/2024/11/international-conference-on-ai-in-work-innovation-productivity-and-skills-12-13-december-2024-paris-france.html"class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center ">
+                      <img src="./photo/AirFrance.avif" class="img-fluid rounded-2" style="object-fit: cover; max-height: 170px;" alt="ia submit" >
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">Partenariat entre Google Cloud et Air France-KLM </h5>
+                      <p class="card-text">
+                        Pour intégrer des technologies d'intelligence artificielle générative dans les vastes ensembles de données de la compagnie aérienne
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Décembre</small></p>
+                      <div>
+                        <a href="https://www.reuters.com/technology/artificial-intelligence/google-cloud-partners-with-air-france-klm-ai-technology-2024-12-04/ " class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center ">
+                      <img src="./photo/sophIA.png" class="img-fluid rounded-2" style="object-fit: cover; max-height: 170px;" alt="ia submit" >
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">SophI.A Summit 2024 </h5>
+                      <p class="card-text">
+                        La technopole de Sophia Antipolis a accueilli le SophI.A Summit 2024, un sommet international réunissant des acteurs majeurs de l'intelligence artificielle.
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Novembre</small></p>
+                      <div>
+                        <a href="https://www.reuters.com/technology/artificial-intelligence/google-cloud-partners-with-air-france-klm-ai-technology-2024-12-04/ " class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+           
+
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center ">
+                      <img src="./photo/MIA.png" class="img-fluid rounded-2" style="object-fit: cover; max-height: 170px;" alt="ia submit" >
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">Déploiement de MIA Seconde dans les lycées </h5>
+                      <p class="card-text">
+                       Introduction de "MIA Seconde", un tuteur numérique basé sur l'IA, dans les lycées français pour aider les élèves de seconde en math et français.
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Octobre</small></p>
+                      <div>
+                        <a href="https://www.lemonde.fr/pixels/article/2024/10/29/mia-seconde-a-l-heure-de-chatgpt-le-tuteur-sous-intelligence-artificielle-de-l-education-nationale-est-il-deja-obsolete_6364449_4408996.html" class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3  rounded-2 mx-5 ">
+                <div class="row g-0">
+                  <div class="col-md-4  d-flex align-items-center justify-content-center ">
+                      <img src="./photo/openai.jpg" class="img-fluid rounded-2" style="object-fit: cover; max-height: 170px;" alt="ia submit" >
+                  </div>
+
+                  <div class="col-md-8 d-flex flex-column justify-content-between  "><!-- rounded-bottom rounded-md-end -->
+                    <div class="card-body">
+                      <h5 class="card-title">Ouverture du bureau d'OpenAI à Paris  </h5>
+                      <p class="card-text">
+                        OpenAI, la société américaine spécialisée en intelligence artificielle, a annoncé l'ouverture de son premier bureau en Europe continentale à Paris.
+                      </p>
+                      
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between m-2 card-footer">
+                      <p class="card-text "><small class="text-body-secondary">Octobre</small></p>
+                      <div>
+                        <a href="https://www.lemonde.fr/economie/article/2024/10/09/openai-va-ouvrir-un-bureau-a-paris_6347114_3234.html" class="btn btn-primary" target="_blank">Source</a>
+                        <!-- <button class="btn btn-secondary">Détails</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+          </div>
+        </section>
+
         <!-- Section Contact -->
         <div  id="Contact" class="p-5"></div>
         <section class=" pt-5 ">
@@ -1065,7 +1268,8 @@
               </div>
               
                 <div class="col-12 d-flex justify-content-center col-lg-5 mt-4 ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.819255619813!2d4.878021777423936!3d45.694599118034915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c267d9dd9b89%3A0xb4831e2a3341bec3!2sLyc%C3%A9e%20Jacques%20Brel!5e0!3m2!1sfr!2sfr!4v1711896575948!5m2!1sfr!2sfr" width="900" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="p-5 map "></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.819255619813!2d4.878021777423936!3d45.694599118034915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c267d9dd9b89%3A0xb4831e2a3341bec3!2sLyc%C3%A9e%20Jacques%20Brel!5e0!3m2!1sfr!2sfr!4v1711896575948!5m2!1sfr!2sfr" width="900" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="p-5 map "></iframe>
+
                 </div>
             </div>
             
@@ -1261,6 +1465,8 @@
   </script>
   <!-- script pour le offcanva de la nav -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
 <script>
   document.querySelectorAll('#navbarOffcanvasLg a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -1275,11 +1481,10 @@
           bsOffcanvas.hide();
       });
   });
-</script>
 
 
 <!-- script bouton qui remonte -->
-<script>
+
 const bouton = document.querySelector('.bouton');
 
 window.addEventListener('scroll', () => {
@@ -1316,18 +1521,18 @@ bouton.addEventListener('click', () => {
 });
 
 
-</script>
 
-<!-- script tooltip -->
-<script>
+
+//script tooltip 
+
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-</script>
 
-  <!--script time laps  -->
-  <script>
+
+  //script time laps
+ 
     const allRonds = document.querySelectorAll('.rond');
 const allBoxes = document.querySelectorAll('.box');
 
@@ -1355,9 +1560,9 @@ allBoxes.forEach(box => {
     }
 
 })
-  </script>
-  <!-- Script bouton cards -->
-  <script>
+  
+  // Script bouton cards 
+ 
     document.addEventListener('DOMContentLoaded', function () {
       const btnProjet = document.getElementById('btnProjet');
       const btnCertif = document.getElementById('btnCertif');
@@ -1379,9 +1584,7 @@ allBoxes.forEach(box => {
       // Appeler la fonction une fois pour régler l'état initial
       toggleProjectBtnGroup();
     });
-  </script>
-
-<script>
+  
   document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-button');
 
@@ -1402,15 +1605,15 @@ allBoxes.forEach(box => {
       });
     });
   });
-</script>
 
 
 
 
 
-<!-- SCRIPT CARD -->
 
-<script> 
+// SCRIPT CARD 
+
+
 /// Récupération des éléments HTML
 const btnProjet = document.getElementById('btnProjet');
 const btnCertif = document.getElementById('btnCertif');
@@ -1489,6 +1692,28 @@ voirPlusBtn.addEventListener('click', function() {
 
     
 });
+
+/* Script pour afficher ou ferme la bar vertical */
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleBar");
+    const socialBar = document.getElementById("socialBar");
+
+    toggleButton.addEventListener("click", function () {
+      if (socialBar.classList.contains("d-none")) {
+        // Afficher la barre
+        socialBar.classList.remove("d-none");
+        socialBar.classList.add("d-flex");
+        toggleButton.querySelector("p").textContent = "<"; // Inverser la flèche
+      } else {
+        // Cacher la barre
+        socialBar.classList.remove("d-flex");
+        socialBar.classList.add("d-none");
+        toggleButton.querySelector("p").textContent = ">"; // Remettre la flèche normale
+      }
+    });
+  });
+
+
 
 
 
